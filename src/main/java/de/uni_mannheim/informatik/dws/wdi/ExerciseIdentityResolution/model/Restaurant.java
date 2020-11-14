@@ -59,7 +59,7 @@ public class Restaurant implements Matchable {
 		return city;
 	}
 
-	public void setCity(String address) {
+	public void setCity(String city) {
 		this.city = city;
 	}
 	

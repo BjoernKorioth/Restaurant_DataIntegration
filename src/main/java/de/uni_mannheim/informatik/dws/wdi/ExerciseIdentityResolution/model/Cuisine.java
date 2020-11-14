@@ -10,18 +10,18 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 public class Cuisine extends AbstractRecord<Attribute> implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
-	private String cuisine;
+	private String name;
 	
 	public Cuisine(String identifier, String provenance) {
 		super(identifier, provenance);
 	}
 	
 	public String getCuisine() {
-		return cuisine;
+		return name;
 	}
 
-	public void setCuisine(String cuisine) {
-		this.cuisine = cuisine;
+	public void setCuisine(String name) {
+		this.name = name;
 	}
 	
 	/*
@@ -31,7 +31,7 @@ public class Cuisine extends AbstractRecord<Attribute> implements Serializable {
 	 */
 	@Override
 	public int hashCode() {
-		int result = 31 + ((cuisine == null) ? 0 : cuisine.hashCode());
+		int result = 31 + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
 
@@ -49,15 +49,15 @@ public class Cuisine extends AbstractRecord<Attribute> implements Serializable {
 		if (getClass() != obj.getClass())
 			return false;
 		Cuisine other = (Cuisine) obj;
-		if (cuisine == null) {
-			if (other.cuisine != null)
+		if (name == null) {
+			if (other.name != null)
 				return false;
-		} else if (!cuisine.equals(other.cuisine))
+		} else if (!name.equals(other.name))
 			return false;
 		return true;
 	}
 	
-	public static final Attribute CUISINE = new Attribute("Cuisine");
+	public static final Attribute NAME = new Attribute("name");
 
 	
 	/* (non-Javadoc)
@@ -65,8 +65,8 @@ public class Cuisine extends AbstractRecord<Attribute> implements Serializable {
 	 */
 	@Override
 	public boolean hasValue(Attribute attribute) {
-		if(attribute==CUISINE)
-			return cuisine!=null;
+		if(attribute==NAME)
+			return name!=null;
 		return false;
 	}
 

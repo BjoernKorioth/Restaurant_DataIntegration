@@ -3,11 +3,13 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model;
 import java.util.List;
 
 
+import org.w3c.dom.Attr;
 import org.w3c.dom.Node;
 
 import de.uni_mannheim.informatik.dws.winter.model.DataSet;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader;
+import org.w3c.dom.NodeList;
 
 public class RestaurantXMLReader extends XMLMatchableReader<Restaurant, Attribute> {
 	
@@ -63,7 +65,7 @@ public class RestaurantXMLReader extends XMLMatchableReader<Restaurant, Attribut
 		// load the lists
 		
 		//Neighborhoods
-		List<Neighborhood> neighborhoods = getObjectListFromChildElement(node, "neighborhood",
+		List<Neighborhood> neighborhoods = getObjectListFromChildElement(node, "neighborhoods",
 				"neighborhood", new NeighborhoodXMLReader(), provenanceInfo);
 		restaurant.setNeighborhood(neighborhoods);
 		
@@ -74,5 +76,18 @@ public class RestaurantXMLReader extends XMLMatchableReader<Restaurant, Attribut
 
 		return restaurant;
 	}
+	/*protected String getNodeAttributeValue(Node node, String attributeName) {
+
+		if (node.hasAttributes()) {
+			Attr attr = (Attr) node.getAttributes().getNamedItem(attributeName);
+			if (attr != null) {
+				return attr.getValue();
+				//System.out.println("attribute: " + attribute);
+			}
+		}
+		return  null;
+
+	}
+	*/
 
 }

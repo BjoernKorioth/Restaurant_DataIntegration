@@ -15,7 +15,7 @@ public class CuisineXMLReader extends XMLMatchableReader<Cuisine, Attribute> {
 		Cuisine cuisine = new Cuisine(id, provenanceInfo);
 
 		// fill the attributes
-		cuisine.setCuisine(getValueFromChildElement(node, "cuisine"));
+		cuisine.setCuisine(getValueFromChildElement(node, "name"));
 		
 		return cuisine;
 	}

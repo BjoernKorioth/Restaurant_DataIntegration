@@ -9,18 +9,18 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 public class Neighborhood extends AbstractRecord<Attribute> implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
-	private String neighborhood;
+	private String name;
 	
 	public Neighborhood(String identifier, String provenance) {
 		super(identifier, provenance);
 	}
 	
-	public String getCuisine() {
-		return neighborhood;
+	public String getNeighborhood() {
+		return name;
 	}
 
-	public void setCuisine(String neighborhood) {
-		this.neighborhood = neighborhood;
+	public void setNeighborhood(String name) {
+		this.name = name;
 	}
 	
 	/*
@@ -30,7 +30,7 @@ public class Neighborhood extends AbstractRecord<Attribute> implements Serializa
 	 */
 	@Override
 	public int hashCode() {
-		int result = 31 + ((neighborhood == null) ? 0 : neighborhood.hashCode());
+		int result = 31 + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
 
@@ -48,15 +48,15 @@ public class Neighborhood extends AbstractRecord<Attribute> implements Serializa
 		if (getClass() != obj.getClass())
 			return false;
 		Neighborhood other = (Neighborhood) obj;
-		if (neighborhood == null) {
-			if (other.neighborhood != null)
+		if (name == null) {
+			if (other.name != null)
 				return false;
-		} else if (!neighborhood.equals(other.neighborhood))
+		} else if (!name.equals(other.name))
 			return false;
 		return true;
 	}
 	
-	public static final Attribute NEIGHBORHOOD = new Attribute("Neighborhood");
+	public static final Attribute NAME = new Attribute("Name");
 
 	
 	/* (non-Javadoc)
@@ -64,8 +64,8 @@ public class Neighborhood extends AbstractRecord<Attribute> implements Serializa
 	 */
 	@Override
 	public boolean hasValue(Attribute attribute) {
-		if(attribute==NEIGHBORHOOD)
-			return neighborhood!=null;
+		if(attribute==NAME)
+			return name!=null;
 		return false;
 	}
 	

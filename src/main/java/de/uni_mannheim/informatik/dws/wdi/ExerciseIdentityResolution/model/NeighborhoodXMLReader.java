@@ -15,7 +15,7 @@ public class NeighborhoodXMLReader extends XMLMatchableReader<Neighborhood, Attr
 		Neighborhood neighborhood = new Neighborhood(id, provenanceInfo);
 
 		// fill the attributes
-		neighborhood.setCuisine(getValueFromChildElement(node, "neighborhhod"));
+		neighborhood.setNeighborhood(getValueFromChildElement(node, "name"));
 		
 		return neighborhood;
 	}
