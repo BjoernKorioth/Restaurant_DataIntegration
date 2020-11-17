@@ -1,6 +1,10 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByCity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByState;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByZipCodeTwoDigits;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatotLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Restaurant;
@@ -39,7 +43,7 @@ public class IR_test {
         System.out.println("*\n*\tLoading gold standard\n*");
         MatchingGoldStandard gsTest = new MatchingGoldStandard();
         gsTest.loadFromCSVFile(new File(
-                "data/goldstandard/gs_zomato_yelp.csv"));
+                "data/goldstandard/gs_zomato_2_yellow_pages.csv"));
 
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
@@ -47,10 +51,10 @@ public class IR_test {
         matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
-        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.5);
-
-
+        //matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
+        //matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.2);
+        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.6);
+        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.4);
         // create a blocker (blocking strategy)
         StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByZipCodeTwoDigits());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
@@ -65,11 +69,11 @@ public class IR_test {
         // Execute the matching
         System.out.println("*\n*\tRunning identity resolution\n*");
         Processable<Correspondence<Restaurant, Attribute>> correspondencesZomatoYelp = engineZomatoYelp.runIdentityResolution(
-                dataRestaurantZomato, dataRestaurantYelp, null, matchingRule,
-                null);
+                dataRestaurantZomato, dataRestaurantYP, null, matchingRule,
+                blocker);
 
         // Create a top-1 global matching
-        correspondencesZomatoYelp = engineZomatoYelp.getTopKInstanceCorrespondences(correspondencesZomatoYelp, 1, 0.0);
+        correspondencesZomatoYelp = engineZomatoYelp.getTopKInstanceCorrespondences(correspondencesZomatoYelp, 1, 0);
 
         // write the correspondences to the output file
         new CSVCorrespondenceFormatter().writeCSV(new File("data/output/zomato_yelp_correspondences.csv"), correspondencesZomatoYelp);
@@ -81,7 +85,7 @@ public class IR_test {
                 gsTest);
 
         // print the evaluation result
-        System.out.println("Zomato <-> Yelp");
+        System.out.println("Zomato <-> Yellow");
         System.out.println(String.format(
                 "Precision: %.4f",perfTest.getPrecision()));
         System.out.println(String.format(
