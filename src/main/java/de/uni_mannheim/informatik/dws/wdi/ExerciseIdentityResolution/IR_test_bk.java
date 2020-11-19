@@ -1,6 +1,7 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByCity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingKeyByZipCode;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByZipCodeTwoDigits;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorJaccard;
@@ -49,20 +50,20 @@ public class IR_test_bk {
         System.out.println("*\n*\tLoading gold standard\n*");
         MatchingGoldStandard gsTest = new MatchingGoldStandard();
         gsTest.loadFromCSVFile(new File(
-                "data/goldstandard/Z_YP_GS.csv"));
+                "data/goldstandard/gs_zomato_2_yellow_pages.csv"));
 
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-                0.7);
-        matchingRule.activateDebugReport("data/output/debugResultsMatchingRuleBK.csv", 1000, gsTest);
+                0.5);
+        matchingRule.activateDebugReport("data/output/debugResultsMatchingRuleBK.csv", 1000000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
-        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.5);
+        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.7);
+        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.3);
 
 
         // create a blocker (blocking strategy)
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByCity());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByZipCode());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
 //		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
         blocker.setMeasureBlockSizes(true);
