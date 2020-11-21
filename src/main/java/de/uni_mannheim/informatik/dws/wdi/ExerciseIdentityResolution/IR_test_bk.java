@@ -4,6 +4,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Re
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingKeyByZipCode;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByZipCodeTwoDigits;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatotLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Restaurant;
@@ -54,12 +55,12 @@ public class IR_test_bk {
 
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-                0.5);
+                0.4);
         matchingRule.activateDebugReport("data/output/debugResultsMatchingRuleBK.csv", 1000000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.7);
-        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.3);
+        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
+        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.5);
 
 
         // create a blocker (blocking strategy)
