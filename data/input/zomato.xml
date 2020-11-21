@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<restaurants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<restaurants xsi:noNamespaceSchemaLocation="file:///C:/Users/d060445/OneDrive%20-%20SAP%20SE/Documents/university/WebData%20Integration/Project/Output/Target.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<restaurant>
 		<id>zomato_0</id>
 		<name>strings ramen shop</name>
