@@ -43,7 +43,7 @@ public class IR_test_bk {
 
 
         HashedDataSet<Restaurant, Attribute> dataRestaurantYP = new HashedDataSet<>();
-        new RestaurantXMLReader().loadFromXML(new File("data/input/yellow.xml"), "/restaurants/restaurant", dataRestaurantYP);
+        new RestaurantXMLReader().loadFromXML(new File("data/input/yellow_pages.xml"), "/restaurants/restaurant", dataRestaurantYP);
         
         System.out.println("*\n*\tCompleted Loading datasets\n*");
 
@@ -51,11 +51,11 @@ public class IR_test_bk {
         System.out.println("*\n*\tLoading gold standard\n*");
         MatchingGoldStandard gsTest = new MatchingGoldStandard();
         gsTest.loadFromCSVFile(new File(
-                "data/goldstandard/gs_zomato_2_yellow_pages.csv"));
+                "data/goldstandard/gs_zomato_2_yellowPages.csv"));
 
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-                0.4);
+                0.5);
         matchingRule.activateDebugReport("data/output/debugResultsMatchingRuleBK.csv", 1000000, gsTest);
 
         // add comparators
