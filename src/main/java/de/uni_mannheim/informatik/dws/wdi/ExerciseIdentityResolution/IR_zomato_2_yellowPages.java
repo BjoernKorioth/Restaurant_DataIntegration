@@ -9,10 +9,12 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorMaxToken;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatotLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantRatingComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.RestaurantXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.algorithms.MaximumBipartiteMatchingAlgorithm;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
@@ -59,6 +61,8 @@ public class IR_zomato_2_yellowPages {
         matchingRule.addComparator(new RestaurantAddressComparatorMaxToken(), 0.7);
 //        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.5);
         
+//        matchingRule.addComparator(new RestaurantRatingComparator(), 0.1);
+        
         
         // create a blocker (blocking strategy)
 //        NoBlocker<Restaurant, Attribute> blocker = new NoBlocker<>();
@@ -81,8 +85,13 @@ public class IR_zomato_2_yellowPages {
                 blocker);
 
         // Create a top-1 global matching
-        correspondencesZomatoYellowPages = engineZomato_YellowPages.getTopKInstanceCorrespondences(correspondencesZomatoYellowPages, 1, 0);
+//        correspondencesZomatoYellowPages = engineZomato_YellowPages.getTopKInstanceCorrespondences(correspondencesZomatoYellowPages, 1, 0);
 
+//        Alternative: Create a maximum-weight, bipartite matching
+		 MaximumBipartiteMatchingAlgorithm<Restaurant, Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondencesZomatoYellowPages);
+		 maxWeight.run();
+		 correspondencesZomatoYellowPages = maxWeight.getResult();
+        
         // write the correspondences to the output file
         new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Zomato_2_YP_correspondences.csv"), correspondencesZomatoYellowPages);
 
