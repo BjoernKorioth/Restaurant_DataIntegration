@@ -1,6 +1,7 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByCity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByState;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByZipCodeTwoDigits;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingKeyByZipCode;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorJaccard;
@@ -11,6 +12,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Resta
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.RestaurantXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -49,15 +51,20 @@ public class IR_yelp_2_yellowPages {
                 0.7);
         matchingRule.activateDebugReport("data/output/YP_2_Yelp_debugResultsMatchingRule.csv", 1000, gsTest);
 
-        // add comparators
-//        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
-//        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.7);
-        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.6);
-        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.4);
+     // add comparators
+        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
+        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.5);
+//        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.6);
+//        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.4);
+        
+        
         // create a blocker (blocking strategy)
+//        NoBlocker<Restaurant, Attribute> blocker = new NoBlocker<>();
         StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByZipCode());
-//		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
-//		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
+//        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByZipCodeTwoDigits());
+//        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByCity());
+//        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByState());
+        
         blocker.setMeasureBlockSizes(true);
         //Write debug results to file:
         blocker.collectBlockSizeData("data/output/YP_2_Yelp_debugResultsBlocking.csv", 100);

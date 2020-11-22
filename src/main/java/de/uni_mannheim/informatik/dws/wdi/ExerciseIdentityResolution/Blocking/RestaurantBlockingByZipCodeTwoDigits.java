@@ -16,6 +16,8 @@ public class RestaurantBlockingByZipCodeTwoDigits extends
 
     @Override
     public void generateBlockingKeys(Restaurant record, Processable<Correspondence<Attribute, Matchable>> correspondences, DataIterator<Pair<String, Restaurant>> resultCollector) {
-        resultCollector.next(new Pair<>(Integer.toString(record.getZip()).substring(0,2), record));
+        try {
+    	resultCollector.next(new Pair<>(Integer.toString(record.getZip()).substring(0,2), record));
+        } catch (Exception e) {};
     }
 }

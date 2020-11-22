@@ -1,14 +1,19 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByCity;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByState;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByZipCodeTwoDigits;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingKeyByZipCode;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorMaxToken;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatotLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.RestaurantXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -44,20 +49,27 @@ public class IR_zomato_2_yellowPages {
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
                 0.7);
-        matchingRule.activateDebugReport("data/output/Zomato_2_YP_debugResultsMatchingRule.csv", 1000, gsTest);
+        matchingRule.activateDebugReport("data/output/Zomato_2_YP_debugResultsMatchingRule.csv", 1000000, gsTest);
 
         // add comparators
-        //matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
-        //matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.2);
-        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.6);
-        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.4);
+//        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
+        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.3);
+        
+//        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.5);
+        matchingRule.addComparator(new RestaurantAddressComparatorMaxToken(), 0.7);
+//        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.5);
+        
+        
         // create a blocker (blocking strategy)
+//        NoBlocker<Restaurant, Attribute> blocker = new NoBlocker<>();
         StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByZipCode());
-//		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
-//		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
+//        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByZipCodeTwoDigits());
+//        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByCity());
+//        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByState());
+
         blocker.setMeasureBlockSizes(true);
         //Write debug results to file:
-        blocker.collectBlockSizeData("data/output/Zomato_2_YP_DebugResultsBlocking.csv", 100);
+        blocker.collectBlockSizeData("data/output/Zomato_2_YP_DebugResultsBlocking.csv", 1000000);
 
         // Initialize Matching Engine
         MatchingEngine<Restaurant, Attribute> engineZomato_YellowPages = new MatchingEngine<>();
