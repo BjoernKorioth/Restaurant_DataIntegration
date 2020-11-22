@@ -1,5 +1,5 @@
 /target/
-data/output
+data/output/
 data/output/debugResultsBlockingBK.csv
 data/output/debugResultsBlockingBK.csv
 data/output/debugResultsMatchingRuleBK.csv
