@@ -3,6 +3,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByCity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByState;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByZipCodeTwoDigits;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingKeyByZipCode;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorJaccard;
@@ -43,7 +44,7 @@ public class IR_zomato_2_yelp {
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
                 0.7);
-        matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
+        matchingRule.activateDebugReport("data/output/Zomato_2_Yelp_debugResultsMatchingRule.csv", 1000, gsTest);
 
         // add comparators
         //matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
@@ -51,12 +52,12 @@ public class IR_zomato_2_yelp {
         matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.6);
         matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.4);
         // create a blocker (blocking strategy)
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByCity());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByZipCode());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
 //		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
         blocker.setMeasureBlockSizes(true);
         //Write debug results to file:
-        blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+        blocker.collectBlockSizeData("data/output/Zomato_2_Yelp_debugResultsBlocking.csv", 100);
 
         // Initialize Matching Engine
         MatchingEngine<Restaurant, Attribute> engineZomatoYelp = new MatchingEngine<>();
@@ -71,7 +72,7 @@ public class IR_zomato_2_yelp {
         correspondencesZomatoYelp = engineZomatoYelp.getTopKInstanceCorrespondences(correspondencesZomatoYelp, 1, 0);
 
         // write the correspondences to the output file
-        new CSVCorrespondenceFormatter().writeCSV(new File("data/output/zomato_yelp_correspondences.csv"), correspondencesZomatoYelp);
+        new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Zomato_2_Yelp_correspondences.csv"), correspondencesZomatoYelp);
 
         System.out.println("*\n*\tEvaluating result\n*");
         // evaluate your result

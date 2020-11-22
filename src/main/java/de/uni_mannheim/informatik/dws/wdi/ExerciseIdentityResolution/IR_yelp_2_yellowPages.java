@@ -2,6 +2,7 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByCity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByZipCodeTwoDigits;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingKeyByZipCode;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorJaccard;
@@ -41,25 +42,25 @@ public class IR_yelp_2_yellowPages {
         System.out.println("*\n*\tLoading gold standard\n*");
         MatchingGoldStandard gsTest = new MatchingGoldStandard();
         gsTest.loadFromCSVFile(new File(
-                "data/goldstandard/gs_yelp_2_yellowPages.csv"));
+                "data/goldstandard/gs_yp_2_yelp.csv"));
 
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
                 0.7);
-        matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_BK_YY.csv", 1000, gsTest);
+        matchingRule.activateDebugReport("data/output/YP_2_Yelp_debugResultsMatchingRule.csv", 1000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
-        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.7);
-//        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.6);
-//        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.4);
+//        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
+//        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.7);
+        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.6);
+        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.4);
         // create a blocker (blocking strategy)
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByCity());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByZipCode());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
 //		SortedNeighbourhoodBlocker<Movie, Attribute, Attribute> blocker = new SortedNeighbourhoodBlocker<>(new MovieBlockingKeyByTitleGenerator(), 1);
         blocker.setMeasureBlockSizes(true);
         //Write debug results to file:
-        blocker.collectBlockSizeData("data/output/debugResultsBlocking.csv", 100);
+        blocker.collectBlockSizeData("data/output/YP_2_Yelp_debugResultsBlocking.csv", 100);
 
         // Initialize Matching Engine
         MatchingEngine<Restaurant, Attribute> engineYelpYellowPages = new MatchingEngine<>();
@@ -74,7 +75,7 @@ public class IR_yelp_2_yellowPages {
         correspondencesYelpYellowPages = engineYelpYellowPages.getTopKInstanceCorrespondences(correspondencesYelpYellowPages, 1, 0);
 
         // write the correspondences to the output file
-        new CSVCorrespondenceFormatter().writeCSV(new File("data/output/yelp_yellowPages_correspondences.csv"), correspondencesYelpYellowPages);
+        new CSVCorrespondenceFormatter().writeCSV(new File("data/output/YP_2_Yelp_correspondences.csv"), correspondencesYelpYellowPages);
 
         System.out.println("*\n*\tEvaluating result\n*");
         // evaluate your result
