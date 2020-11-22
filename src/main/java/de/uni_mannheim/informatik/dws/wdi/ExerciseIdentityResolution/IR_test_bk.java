@@ -55,12 +55,12 @@ public class IR_test_bk {
 
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-                0.5);
-        matchingRule.activateDebugReport("data/output/debugResultsMatchingRuleBK.csv", 1000000, gsTest);
+                0.6);
+        matchingRule.activateDebugReport("data/output/debug_Zomato2_YP_BK.csv", 1000000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
-        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.5);
+        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.7);
+        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.3);
 
 
         // create a blocker (blocking strategy)

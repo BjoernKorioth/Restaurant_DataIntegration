@@ -2,7 +2,9 @@ package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByCity;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByZipCodeTwoDigits;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatotLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.RestaurantXMLReader;
@@ -44,13 +46,13 @@ public class IR_yelp_2_yellowPages {
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
                 0.7);
-        matchingRule.activateDebugReport("data/output/debugResultsMatchingRule.csv", 1000, gsTest);
+        matchingRule.activateDebugReport("data/output/debugResultsMatchingRule_BK_YY.csv", 1000, gsTest);
 
         // add comparators
-        //matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
-        //matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.2);
-        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.6);
-        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.4);
+        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
+        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.7);
+//        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.6);
+//        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.4);
         // create a blocker (blocking strategy)
         StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByCity());
 //		NoBlocker<Movie, Attribute> blocker = new NoBlocker<>();
