@@ -429,7 +429,7 @@ zomato_6410,yelp_326,TRUE
 zomato_2292,yelp_8340,TRUE
 zomato_2307,yelp_8767,TRUE
 zomato_1629,yelp_8520,TRUE
-zomato_1416,yelp_2864,FALSE
+zomato_1416,yelp_2864,TRUE
 zomato_2348,yelp_1720,FALSE
 zomato_2112,yelp_8452,FALSE
 zomato_1453,yelp_8237,FALSE
@@ -458,8 +458,8 @@ zomato_7201,yelp_68,FALSE
 zomato_1898,yelp_8685,FALSE
 zomato_1490,yelp_8544,FALSE
 zomato_1804,yelp_8571,FALSE
-zomato_2328,yelp_1640,FALSE
-zomato_1867,yelp_8913,FALSE
+zomato_2328,yelp_1640,TRUE
+zomato_1867,yelp_8913,TRUE
 zomato_1047,yelp_2650,FALSE
 zomato_1507,yelp_8544,FALSE
 zomato_7600,yelp_433,FALSE

@@ -6,12 +6,15 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.Re
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingKeyByZipCode;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorJaccard;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorLevenshtein;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorMaxToken;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorMaxToken;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatotLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.RestaurantXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEvaluator;
+import de.uni_mannheim.informatik.dws.winter.matching.algorithms.MaximumBipartiteMatchingAlgorithm;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.NoBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.blockers.StandardRecordBlocker;
 import de.uni_mannheim.informatik.dws.winter.matching.rules.LinearCombinationMatchingRule;
@@ -45,14 +48,18 @@ public class IR_zomato_2_yelp {
      // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
                 0.7);
-        matchingRule.activateDebugReport("data/output/Zomato_2_Yelp_debugResultsMatchingRule.csv", 1000, gsTest);
+        matchingRule.activateDebugReport("data/output/Zomato_2_Yelp_debugResultsMatchingRule.csv", 1000000, gsTest);
 
         // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
-        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.5);
-//        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.6);
-//        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.4);
-        
+//      matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
+//      matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.3);
+        matchingRule.addComparator(new RestaurantNameComparatorMaxToken(), 0.3);
+      
+//      matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.5);
+      matchingRule.addComparator(new RestaurantAddressComparatorMaxToken(), 0.7);
+//      matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.5);
+      
+//      matchingRule.addComparator(new RestaurantRatingComparator(), 0.1);
         
         // create a blocker (blocking strategy)
 //        NoBlocker<Restaurant, Attribute> blocker = new NoBlocker<>();
@@ -74,9 +81,14 @@ public class IR_zomato_2_yelp {
                 dataRestaurantZomato, dataRestaurantYelp, null, matchingRule,
                 blocker);
 
-        // Create a top-1 global matching
-        correspondencesZomatoYelp = engineZomatoYelp.getTopKInstanceCorrespondences(correspondencesZomatoYelp, 1, 0);
+     // Create a top-1 global matching
+//      correspondencesZomatoYellowPages = engineZomato_YellowPages.getTopKInstanceCorrespondences(correspondencesZomatoYellowPages, 1, 0);
 
+//      Alternative: Create a maximum-weight, bipartite matching
+		 MaximumBipartiteMatchingAlgorithm<Restaurant, Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondencesZomatoYelp);
+		 maxWeight.run();
+		 correspondencesZomatoYelp = maxWeight.getResult();
+		 
         // write the correspondences to the output file
         new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Zomato_2_Yelp_correspondences.csv"), correspondencesZomatoYelp);
 
