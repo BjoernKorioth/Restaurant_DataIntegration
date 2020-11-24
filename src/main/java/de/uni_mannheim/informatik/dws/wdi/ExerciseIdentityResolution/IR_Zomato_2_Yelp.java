@@ -28,7 +28,7 @@ import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 import java.io.File;
 
-public class IR_zomato_2_yelp {
+public class IR_Zomato_2_Yelp {
     public static void main( String[] args ) throws Exception
     {
         // loading data
@@ -43,34 +43,28 @@ public class IR_zomato_2_yelp {
         System.out.println("*\n*\tLoading gold standard\n*");
         MatchingGoldStandard gsTest = new MatchingGoldStandard();
         gsTest.loadFromCSVFile(new File(
-                "data/goldstandard/gs_zomato_2_yelp.csv"));
+                "data/goldstandard/GS_Zomato_Yelp.csv"));
 
      // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
                 0.7);
-        matchingRule.activateDebugReport("data/output/Zomato_2_Yelp_debugResultsMatchingRule.csv", 1000000, gsTest);
+        matchingRule.activateDebugReport("data/output/Zomato_2_Yelp/debugResultsMatchingRule.csv", 1000000, gsTest);
 
         // add comparators
-//      matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
-//      matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.3);
         matchingRule.addComparator(new RestaurantNameComparatorMaxToken(), 0.3);
-      
-//      matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.5);
-      matchingRule.addComparator(new RestaurantAddressComparatorMaxToken(), 0.7);
-//      matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.5);
-      
-//      matchingRule.addComparator(new RestaurantRatingComparator(), 0.1);
+        matchingRule.addComparator(new RestaurantAddressComparatorMaxToken(), 0.7);
+
         
         // create a blocker (blocking strategy)
 //        NoBlocker<Restaurant, Attribute> blocker = new NoBlocker<>();
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByZipCode());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByZipCodeTwoDigits());
 //        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByZipCodeTwoDigits());
 //        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByCity());
 //        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByState());
         
         blocker.setMeasureBlockSizes(true);
         //Write debug results to file:
-        blocker.collectBlockSizeData("data/output/Zomato_2_Yelp_debugResultsBlocking.csv", 100);
+        blocker.collectBlockSizeData("data/output/Zomato_2_Yelp/debugResultsBlocking.csv", 100);
 
         // Initialize Matching Engine
         MatchingEngine<Restaurant, Attribute> engineZomatoYelp = new MatchingEngine<>();
@@ -90,7 +84,7 @@ public class IR_zomato_2_yelp {
 		 correspondencesZomatoYelp = maxWeight.getResult();
 		 
         // write the correspondences to the output file
-        new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Zomato_2_Yelp_correspondences.csv"), correspondencesZomatoYelp);
+        new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Zomato_2_Yelp/correspondences.csv"), correspondencesZomatoYelp);
 
         System.out.println("*\n*\tEvaluating result\n*");
         // evaluate your result
