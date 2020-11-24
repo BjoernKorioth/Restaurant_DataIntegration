@@ -8,6 +8,7 @@ import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorMaxToken;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorJaccard;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorMaxToken;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatotLevenshtein;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantRatingComparator;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Restaurant;
@@ -50,12 +51,13 @@ public class IR_zomato_2_yellowPages {
 
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-                0.7);
+                0.75);
         matchingRule.activateDebugReport("data/output/Zomato_2_YP_debugResultsMatchingRule.csv", 1000000, gsTest);
 
         // add comparators
-//        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
-        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.3);
+//      matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.5);
+//      matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.3);
+        matchingRule.addComparator(new RestaurantNameComparatorMaxToken(), 0.3);
         
 //        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.5);
         matchingRule.addComparator(new RestaurantAddressComparatorMaxToken(), 0.7);

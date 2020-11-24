@@ -47,7 +47,7 @@ public class IR_zomato_2_yelp {
 
      // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-                0.7);
+                0.75);
         matchingRule.activateDebugReport("data/output/Zomato_2_Yelp_debugResultsMatchingRule.csv", 1000000, gsTest);
 
         // add comparators
