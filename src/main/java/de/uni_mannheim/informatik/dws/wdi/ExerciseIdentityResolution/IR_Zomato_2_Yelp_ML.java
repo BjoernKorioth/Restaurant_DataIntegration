@@ -1,8 +1,8 @@
 package de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution;
 
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingByZipCodeTwoDigits;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantAddressComparatorMaxToken;
-import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.RestaurantNameComparatorMaxToken;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Blocking.RestaurantBlockingKeyByZipCode;
+import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.Comparators.*;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.ExerciseIdentityResolution.model.RestaurantXMLReader;
 import de.uni_mannheim.informatik.dws.winter.matching.MatchingEngine;
@@ -45,12 +45,13 @@ public class IR_Zomato_2_Yelp_ML {
         // create a matching rule
         String options[] = new String[] { "-S" };
         String modelType = "SimpleLogistic"; // use a logistic regression
-        WekaMatchingRule<Restaurant, Attribute> matchingRule = new WekaMatchingRule<>(0.9, modelType, options);
-        matchingRule.activateDebugReport("data/output/Zomato_2_Yelp/debugResultsMatchingRuleML.csv", 1000, gsTraining);
+        WekaMatchingRule<Restaurant, Attribute> matchingRule = new WekaMatchingRule<>(0.6, modelType, options);
+        matchingRule.activateDebugReport("data/output/Zomato_2_Yelp/debugResultsMatchingRuleML.csv", -1, gsTraining);
 
         // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorMaxToken());
         matchingRule.addComparator(new RestaurantAddressComparatorMaxToken());
+        matchingRule.addComparator(new RestaurantNameComparatorMaxToken());
+        matchingRule.addComparator(new RestaurantRatingComparator());
 
         // train the matching rule's model
         System.out.println("*\n*\tLearning matching rule\n*");
@@ -59,7 +60,7 @@ public class IR_Zomato_2_Yelp_ML {
         System.out.println(String.format("Matching rule is:\n%s", matchingRule.getModelDescription()));
 
         // create a blocker (blocking strategy)
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByZipCodeTwoDigits());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByZipCode());
         blocker.collectBlockSizeData("data/output/Zomato_2_Yelp/debugResultsBlockingML.csv", 100);
 
         // Initialize Matching Engine
@@ -70,7 +71,7 @@ public class IR_Zomato_2_Yelp_ML {
         Processable<Correspondence<Restaurant, Attribute>> correspondences = engine.runIdentityResolution(
                 dataRestaurantZomato, dataRestaurantYelp, null, matchingRule,
                 blocker);
-
+        correspondences = engine.getTopKInstanceCorrespondences(correspondences, 1, 0);
         // write the correspondences to the output file
         new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Zomato_2_Yelp/correspondencesML.csv"), correspondences);
 

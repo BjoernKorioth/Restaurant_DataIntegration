@@ -47,23 +47,23 @@ public class IR_Zomato_2_Yelp {
 
      // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
-                0.7);
+                0.6);
         matchingRule.activateDebugReport("data/output/Zomato_2_Yelp/debugResultsMatchingRule.csv", -1, gsTest);
 
      // add comparators
         matchingRule.addComparator(new RestaurantNameComparatorMaxToken(), 0.3);
-        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.3);
-        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
+        //matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.3);
+        //matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
         
         
         matchingRule.addComparator(new RestaurantAddressComparatorMaxToken(), 0.7);
-        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.7);
-        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.7);
+        //matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.7);
+        //matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.7);
 
         
         // create a blocker (blocking strategy)
 //        NoBlocker<Restaurant, Attribute> blocker = new NoBlocker<>();
-        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByZipCodeTwoDigits());
+        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingKeyByZipCode());
 //        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByZipCodeTwoDigits());
 //        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByCity());
 //        StandardRecordBlocker<Restaurant, Attribute> blocker = new StandardRecordBlocker<Restaurant, Attribute>(new RestaurantBlockingByState());
@@ -82,13 +82,14 @@ public class IR_Zomato_2_Yelp {
                 blocker);
 
      // Create a top-1 global matching
-//      correspondencesZomatoYellowPages = engineZomato_YellowPages.getTopKInstanceCorrespondences(correspondencesZomatoYellowPages, 1, 0);
+        correspondencesZomatoYelp = engineZomatoYelp.getTopKInstanceCorrespondences(correspondencesZomatoYelp, 1, 0);
 
 //      Alternative: Create a maximum-weight, bipartite matching
+        /*
 		 MaximumBipartiteMatchingAlgorithm<Restaurant, Attribute> maxWeight = new MaximumBipartiteMatchingAlgorithm<>(correspondencesZomatoYelp);
 		 maxWeight.run();
 		 correspondencesZomatoYelp = maxWeight.getResult();
-		 
+		 */
         // write the correspondences to the output file
         new CSVCorrespondenceFormatter().writeCSV(new File("data/output/Zomato_2_Yelp/correspondences.csv"), correspondencesZomatoYelp);
 
@@ -106,5 +107,24 @@ public class IR_Zomato_2_Yelp {
                 "Recall: %.4f",	perfTest.getRecall()));
         System.out.println(String.format(
                 "F1: %.4f",perfTest.getF1()));
+
+        // load the gold standard (test set)
+        System.out.println("*\n*\tLoading gold standard\n*");
+        MatchingGoldStandard gsTest2 = new MatchingGoldStandard();
+        gsTest2.loadFromCSVFile(new File(
+                "data/goldstandard/ML/GS_Zomato_2_Yelp_test.csv"));
+        MatchingEvaluator<Restaurant, Attribute> evaluator2 = new MatchingEvaluator<Restaurant, Attribute>();
+        Performance perfTest2 = evaluator2.evaluateMatching(correspondencesZomatoYelp,
+                gsTest2);
+
+        // print the evaluation result on the test set
+        System.out.println("TEST set");
+        System.out.println("Zomato <-> Yelp");
+        System.out.println(String.format(
+                "Precision: %.4f",perfTest2.getPrecision()));
+        System.out.println(String.format(
+                "Recall: %.4f",	perfTest2.getRecall()));
+        System.out.println(String.format(
+                "F1: %.4f",perfTest2.getF1()));
     }
 }
