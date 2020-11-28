@@ -45,7 +45,7 @@ public class IR_Zomato_2_Yelp_ML {
         // create a matching rule
         String options[] = new String[] { "-S" };
         String modelType = "SimpleLogistic"; // use a logistic regression
-        WekaMatchingRule<Restaurant, Attribute> matchingRule = new WekaMatchingRule<>(0.6, modelType, options);
+        WekaMatchingRule<Restaurant, Attribute> matchingRule = new WekaMatchingRule<>(0.7, modelType, options);
         matchingRule.activateDebugReport("data/output/Zomato_2_Yelp/debugResultsMatchingRuleML.csv", -1, gsTraining);
 
         // add comparators
