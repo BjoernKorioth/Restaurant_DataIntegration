@@ -46,17 +46,17 @@ public class IR_YP_2_Yelp {
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
                 0.7);
-        matchingRule.activateDebugReport("data/output/YP_2_Yelp/debugResultsMatchingRule.csv", -1, gsTest);
+        matchingRule.activateDebugReport("data/output/YP_2_Yelp/manual/Yelp_YP_debugResultsMatchingRule.csv", -1, gsTest);
 
      // add comparators
-        matchingRule.addComparator(new RestaurantNameComparatorMaxToken(), 0.3);
-        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.3);
-        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
+        matchingRule.addComparator(new RestaurantNameComparatorMaxToken(), 0.4);
+//        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.3);
+//        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
         
         
-        matchingRule.addComparator(new RestaurantAddressComparatorMaxToken(), 0.7);
-        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.7);
-        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.7);
+        matchingRule.addComparator(new RestaurantAddressComparatorMaxToken(), 0.6);
+//        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.7);
+//        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.7);
         
         
         // create a blocker (blocking strategy)
@@ -98,5 +98,24 @@ public class IR_YP_2_Yelp {
                 "Recall: %.4f",	perfTest.getRecall()));
         System.out.println(String.format(
                 "F1: %.4f",perfTest.getF1()));
+        
+     // load the gold standard (test set)
+        System.out.println("*\n*\tLoading gold standard\n*");
+        MatchingGoldStandard gsTest2 = new MatchingGoldStandard();
+        gsTest2.loadFromCSVFile(new File(
+                "data/goldstandard/ML/GS_YP_2_Yelp_test.csv"));
+        MatchingEvaluator<Restaurant, Attribute> evaluator2 = new MatchingEvaluator<Restaurant, Attribute>();
+        Performance perfTest2 = evaluator2.evaluateMatching(correspondencesYelpYellowPages,
+                gsTest2);
+
+        // print the evaluation result on the test set
+        System.out.println("TEST set");
+        System.out.println("Zomato <-> Yelp");
+        System.out.println(String.format(
+                "Precision: %.4f",perfTest2.getPrecision()));
+        System.out.println(String.format(
+                "Recall: %.4f",	perfTest2.getRecall()));
+        System.out.println(String.format(
+                "F1: %.4f",perfTest2.getF1()));
     }
 }

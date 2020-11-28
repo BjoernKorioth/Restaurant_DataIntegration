@@ -24,6 +24,23 @@ public class RestaurantAddressComparatorJaccard implements Comparator<Restaurant
 		
 		String s1 = record1.getAddress();
 		String s2 = record2.getAddress();
+		
+		if (s1.contains("west") || s2.contains("west")) {
+			s1 = s1.replace("west", "w");
+			s2 = s2.replace("west", "w");
+		}
+		if (s1.contains("east") || s2.contains("east")) {
+			s1 = s1.replace("east", "e");
+			s2 = s2.replace("east", "e");
+		}
+		if (s1.contains("south") || s2.contains("south")) {
+			s1 = s1.replace("south", "s");
+			s2 = s2.replace("south", "s");
+		}
+		if (s1.contains("north") || s2.contains("north")) {
+			s1 = s1.replace("north", "n");
+			s2 = s2.replace("north", "n");
+		}
     	
     	double similarity = sim.calculate(s1, s2);
     	
