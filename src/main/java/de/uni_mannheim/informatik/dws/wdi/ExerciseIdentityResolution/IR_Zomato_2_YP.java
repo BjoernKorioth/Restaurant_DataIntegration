@@ -46,11 +46,17 @@ public class IR_Zomato_2_YP {
         // create a matching rule
         LinearCombinationMatchingRule<Restaurant, Attribute> matchingRule = new LinearCombinationMatchingRule<>(
                 0.7);
-        matchingRule.activateDebugReport("data/output/Zomato_2_YP/debugResultsMatchingRule.csv", 1000000, gsTest);
+        matchingRule.activateDebugReport("data/output/Zomato_2_YP/debugResultsMatchingRule.csv", -1, gsTest);
 
-        // add comparators
+     // add comparators
         matchingRule.addComparator(new RestaurantNameComparatorMaxToken(), 0.3);
+        matchingRule.addComparator(new RestaurantNameComparatotLevenshtein(), 0.3);
+        matchingRule.addComparator(new RestaurantNameComparatorJaccard(), 0.3);
+        
+        
         matchingRule.addComparator(new RestaurantAddressComparatorMaxToken(), 0.7);
+        matchingRule.addComparator(new RestaurantAddressComparatorLevenshtein(), 0.7);
+        matchingRule.addComparator(new RestaurantAddressComparatorJaccard(), 0.7);
 
         
         
