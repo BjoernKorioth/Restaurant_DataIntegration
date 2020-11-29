@@ -10,7 +10,9 @@ import java.util.Locale;
 import org.apache.logging.log4j.Logger;
 
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.RestaurantXMLReader;
+import de.uni_mannheim.informatik.dws.wdi.Fusion.evaluation.AddressEvaluationRule;
 import de.uni_mannheim.informatik.dws.wdi.Fusion.evaluation.NameEvaluationRule;
+import de.uni_mannheim.informatik.dws.wdi.Fusion.fusers.AddressFuserShortest;
 import de.uni_mannheim.informatik.dws.wdi.Fusion.fusers.NameFuserFavourSource;
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Restaurant;
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.RestaurantXMLFormatter;
@@ -62,8 +64,8 @@ public class DataFusion_Main {
 
 			// Maintain Provenance
 			// Scores (e.g. from rating)
-			ds1.setScore(3.0);
-			ds2.setScore(1.0);
+			ds1.setScore(1.0);
+			ds2.setScore(3.0);
 			ds3.setScore(2.0);
 //			
 			// Date (e.g. last update)
@@ -100,6 +102,7 @@ public class DataFusion_Main {
 			strategy.activateDebugReport("data/output/debugResultsDatafusion.csv", -1, gs);
 			
 			// add attribute fusers
+			strategy.addAttributeFuser(Restaurant.ADDRESS, new AddressFuserShortest(),new AddressEvaluationRule());
 			strategy.addAttributeFuser(Restaurant.NAME, new NameFuserFavourSource(),new NameEvaluationRule());
 
 			
@@ -108,6 +111,10 @@ public class DataFusion_Main {
 
 			// print consistency report
 			engine.printClusterConsistencyReport(correspondences, null);
+			
+			// print record groups sorted by consistency
+			engine.writeRecordGroupsByConsistency(new File("data/output/recordGroupConsistencies.csv"), correspondences, null);
+
 			
 			// run the fusion
 			System.out.println("*\n*\tRunning data fusion\n*");

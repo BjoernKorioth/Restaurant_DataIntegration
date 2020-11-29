@@ -1,6 +1,6 @@
 <restaurants xmlns:dt="urn:schemas-microsoft-com:datatypes">
 <restaurant>
-	<id>17243</id>
+	<id>yellow_17243</id>
 	<name>liyuen</name>
 	<address>1602 S 7th avenue</address>
 	<city>phoenix</city>
@@ -24,7 +24,7 @@
 </restaurant>
 
 <restaurant>
-	<id>17243</id>
+	<id>yellow_17243</id>
 	<name>rainbow donuts</name>
 	<address>8714 n 7th street</address>
 	<city>phoenix</city>
@@ -48,7 +48,7 @@
 </restaurant>
 
 <restaurant>
-	<id>17305</id>
+	<id>yellow_17305</id>
 	<name>pizza a metro</name>
 	<address>2336 w thomas road</address>
 	<city>phoenix</city>
@@ -72,7 +72,7 @@
 </restaurant>
 
 <restaurant>
-	<id>4014</id>
+	<id>yellow_4014</id>
 	<name>waba grill</name>
 	<address>1134 n vermont avenue</address>
 	<city>los angeles</city>
@@ -102,7 +102,7 @@
 </restaurant>
 
 <restaurant>
-	<id>222</id>
+	<id>yellow_222</id>
 	<name>fundamental la</name>
 	<address>1303 westwood boulevard</address>
 	<city>los angeles</city>
@@ -127,7 +127,7 @@
 </restaurant>
 
 <restaurant>
-	<id>17250</id>
+	<id>yellow_17250</id>
 	<name>jerry restaurant</name>
 	<address>2323 e thomas road
 </address>
@@ -155,7 +155,7 @@
 </restaurant>
 
 <restaurant>
-	<id>4101</id>
+	<id>yellow_4101</id>
 	<name>the empanada factory</name>
 	<address>2513 robertson boulevard</address>
 	<city>los angeles</city>
@@ -179,7 +179,7 @@
 </restaurant>
 
 <restaurant>
-	<id>17240</id>
+	<id>yellow_17240</id>
 	<name>duck and decanter</name>
 	<address>1651 e camelback road</address>
 	<city>phoenix</city>
@@ -206,7 +206,7 @@
 </restaurant>
 
 <restaurant>
-	<id>8484</id>
+	<id>yelp_8484</id>
 	<name>big mama's chicken and waffles</name>
 	<address> 9810 forest lane</address>
 	<city>dallas</city>
@@ -230,7 +230,7 @@
 </restaurant>
 
 <restaurant>
-	<id>8577</id>
+	<id>yelp_8577</id>
 	<name>city cafe</name>
 	<address>5757 w lovers lane</address>
 	<city>dallas</city>
@@ -254,7 +254,7 @@
 </restaurant>
 
 <restaurant>
-	<id>421</id>
+	<id>yelp_421</id>
 	<name>upland</name>
 	<address>345 park avenue s</address>
 	<city>new york</city>
@@ -278,7 +278,7 @@
 </restaurant>
 
 <restaurant>
-	<id>8340</id>
+	<id>yelp_8340</id>
 	<name>ming place china bistro</name>
 	<address>5715 lemmon avenue 3</address>
 	<city>dallas</city>
@@ -302,7 +302,7 @@
 </restaurant>
 
 <restaurant>
-	<id>8333</id>
+	<id>yelp_8333</id>
 	<name>fireside pies</name>
 	<address>7709 inwood road</address>
 	<city>dallas</city>
@@ -329,7 +329,7 @@
 </restaurant>
 
 <restaurant>
-	<id>8223</id>
+	<id>yelp_8223</id>
 	<name>serious pizza</name>
 	<address>2807 elm street</address>
 	<city>dallas</city>
@@ -353,7 +353,7 @@
 </restaurant>
 
 <restaurant>
-	<id>8612</id>
+	<id>yelp_8612</id>
 	<name>smashburger</name>
 	<address>2222 mckinney avenue</address>
 	<city>dallas</city>
