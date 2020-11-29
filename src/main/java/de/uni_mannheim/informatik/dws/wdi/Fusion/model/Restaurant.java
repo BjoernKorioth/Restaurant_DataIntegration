@@ -39,7 +39,7 @@ public class Restaurant extends AbstractRecord<Attribute> implements Serializabl
 	private int zip;
 	private String state;
 	private List<Neighborhood> neighborhoods;
-	private double rating;
+	private String rating;
 	private List<Cuisine> cuisines;
 	private String price;
 	private String website;
@@ -98,11 +98,11 @@ public class Restaurant extends AbstractRecord<Attribute> implements Serializabl
 		this.neighborhoods = neighborhood;
 	}
 	
-	public double getRating() {
+	public String getRating() {
 		return rating;
 	}
 
-	public void setRating(double rating) {
+	public void setRating(String rating) {
 		this.rating = rating;
 	}
 	
@@ -196,7 +196,7 @@ public class Restaurant extends AbstractRecord<Attribute> implements Serializabl
 		else if(attribute==NEIGHBORHOODS)
 			return getNeighborhood() != null && getNeighborhood().size() > 0;
 		else if(attribute==RATING)
-			return getRating() != 0;
+			return getRating() != null && !getRating().isEmpty();
 		else if(attribute==CUISINES)
 			return getCuisine() != null && getCuisine().size() > 0;
 		else if(attribute==PRICE)

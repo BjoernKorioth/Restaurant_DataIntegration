@@ -43,7 +43,7 @@ public class RestaurantXMLFormatter extends XMLFormatter<Restaurant> {
 				record.getMergedAttributeProvenance(Restaurant.STATE), doc));
 		restaurant.appendChild(createCuisinesElement(record, doc));
 		restaurant.appendChild(createTextElementWithProvenance("rating",
-				Double.toString(record.getRating()),
+				record.getRating(),
 				record.getMergedAttributeProvenance(Restaurant.RATING), doc));
 		restaurant.appendChild(createNeighborhoodsElement(record, doc));
 		restaurant.appendChild(createTextElementWithProvenance("price",
@@ -52,9 +52,11 @@ public class RestaurantXMLFormatter extends XMLFormatter<Restaurant> {
 		restaurant.appendChild(createTextElementWithProvenance("website",
 				record.getWebsite(),
 				record.getMergedAttributeProvenance(Restaurant.WEBSITE), doc));
+		try {
 		restaurant.appendChild(createTextElementWithProvenance("card",
 				record.getCard().toString(),
 				record.getMergedAttributeProvenance(Restaurant.CARD), doc));
+		} catch (Exception e) {};
 		
 
 		return restaurant;
