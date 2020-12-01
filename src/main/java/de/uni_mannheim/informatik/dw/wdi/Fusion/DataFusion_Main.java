@@ -27,7 +27,7 @@ import de.uni_mannheim.informatik.dws.winter.model.RecordGroupFactory;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.utils.WinterLogManager;
 
-import de.uni_mannheim.informatik.dw.wdi.Fusion.*;
+
 
 public class DataFusion_Main {
 	
@@ -44,7 +44,7 @@ public class DataFusion_Main {
 		 *
 		 */
 
-		private static final org.slf4j.Logger logger = WinterLogManager.activateLogger("trace");
+	private static final org.slf4j.Logger logger = WinterLogManager.activateLogger("tracefile");
 		
 	    public static void main( String[] args ) throws Exception
 	    {
