@@ -7,6 +7,7 @@ import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.w3c.dom.Node;
 
+
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Cuisine;
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.CuisineXMLReader;
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Neighborhood;
@@ -27,6 +28,19 @@ FusibleFactory<Restaurant, Attribute> {
 	@Override
 	protected void initialiseDataset(DataSet<Restaurant, Attribute> dataset) {
 		super.initialiseDataset(dataset);
+		
+		// the schema is defined in the Movie class and not interpreted from the file, so we have to set the attributes manually
+		dataset.addAttribute(Restaurant.NAME);
+		dataset.addAttribute(Restaurant.ADDRESS);
+		dataset.addAttribute(Restaurant.CITY);
+		dataset.addAttribute(Restaurant.STATE);
+		dataset.addAttribute(Restaurant.PRICE);
+		dataset.addAttribute(Restaurant.WEBSITE);
+		dataset.addAttribute(Restaurant.CARD);
+		dataset.addAttribute(Restaurant.ZIP);
+		dataset.addAttribute(Restaurant.RATING);
+		dataset.addAttribute(Restaurant.NEIGHBORHOODS);
+		dataset.addAttribute(Restaurant.CUISINES);
 		
 	}
 	

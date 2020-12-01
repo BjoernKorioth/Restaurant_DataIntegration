@@ -52,15 +52,15 @@ public class DataFusion_Main {
 			System.out.println("*\n*\tLoading datasets\n*");
 			FusibleDataSet<Restaurant, Attribute> ds1 = new FusibleHashedDataSet<>();
 			new RestaurantXMLReader().loadFromXML(new File("data/input/zomato.xml"), "/restaurants/restaurant", ds1);
-//			ds1.printDataSetDensityReport();
+			ds1.printDataSetDensityReport();
 
 			FusibleDataSet<Restaurant, Attribute> ds2 = new FusibleHashedDataSet<>();
 			new RestaurantXMLReader().loadFromXML(new File("data/input/yelp.xml"), "/restaurants/restaurant", ds2);
-//			ds2.printDataSetDensityReport();
+			ds2.printDataSetDensityReport();
 
 			FusibleDataSet<Restaurant, Attribute> ds3 = new FusibleHashedDataSet<>();
 			new RestaurantXMLReader().loadFromXML(new File("data/input/yellow_pages.xml"), "/restaurants/restaurant", ds3);
-//			ds3.printDataSetDensityReport();
+			ds3.printDataSetDensityReport();
 
 			// Maintain Provenance
 			// Scores (e.g. from rating)
