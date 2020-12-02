@@ -1,7 +1,5 @@
 package de.uni_mannheim.informatik.dws.wdi.Fusion.fusers;
 
-import java.util.List;
-
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Neighborhood;
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
@@ -12,6 +10,8 @@ import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
+
+import java.util.List;
 
 public class NeighborhoodFuserUnion extends AttributeValueFuser<List<Neighborhood>, Restaurant, Attribute> {
 	

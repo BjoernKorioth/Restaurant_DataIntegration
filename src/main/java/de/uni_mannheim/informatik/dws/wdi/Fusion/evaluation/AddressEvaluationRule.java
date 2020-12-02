@@ -1,5 +1,7 @@
 package de.uni_mannheim.informatik.dws.wdi.Fusion.evaluation;
 
+
+
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
@@ -16,7 +18,7 @@ public class AddressEvaluationRule extends EvaluationRule<Restaurant, Attribute>
 	public boolean isEqual(Restaurant record1, Restaurant record2, Attribute schemaElement) {
 		// the title is correct if all tokens are there, but the order does not
 		// matter
-		return sim.calculate(record1.getAddress(), record2.getAddress()) == 1.0;
+		return sim.calculate(record1.getAddress().toLowerCase(), record2.getAddress().toLowerCase()) == 1.0;
 	}
 
 	/* (non-Javadoc)

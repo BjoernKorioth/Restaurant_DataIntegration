@@ -1,5 +1,6 @@
 package de.uni_mannheim.informatik.dws.wdi.Fusion.evaluation;
 
+
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;

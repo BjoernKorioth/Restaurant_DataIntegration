@@ -1,5 +1,6 @@
 package de.uni_mannheim.informatik.dws.wdi.Fusion.fusers;
 
+
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.ShortestString;
@@ -11,7 +12,7 @@ import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
 public class AddressFuserShortest extends
-AttributeValueFuser<String, Restaurant, Attribute> {
+        AttributeValueFuser<String, Restaurant, Attribute> {
 
 public AddressFuserShortest() {
 super(new ShortestString<Restaurant, Attribute>());

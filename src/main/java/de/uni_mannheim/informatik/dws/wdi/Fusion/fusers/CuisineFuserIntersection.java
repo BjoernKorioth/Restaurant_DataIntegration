@@ -1,10 +1,10 @@
 package de.uni_mannheim.informatik.dws.wdi.Fusion.fusers;
 
 
-
+import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Cuisine;
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
-import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
+import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.list.Intersection;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.FusedValue;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
@@ -12,27 +12,29 @@ import de.uni_mannheim.informatik.dws.winter.model.RecordGroup;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
 import de.uni_mannheim.informatik.dws.winter.processing.Processable;
 
-public class NameFuserFavourSource extends AttributeValueFuser<String, Restaurant, Attribute> {
+import java.util.List;
 
-	public NameFuserFavourSource() {
-		super(new FavourSources<String, Restaurant, Attribute>());
+public class CuisineFuserIntersection extends AttributeValueFuser<List<Cuisine>, Restaurant, Attribute> {
+	
+	public CuisineFuserIntersection() {
+		super(new Intersection<Cuisine, Restaurant, Attribute>());
 	}
-
+	
 	@Override
 	public boolean hasValue(Restaurant record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.hasValue(Restaurant.NAME);
+		return record.hasValue(Restaurant.CUISINES);
 	}
-
+	
 	@Override
-	public String getValue(Restaurant record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getName();
+	public List<Cuisine> getValue(Restaurant record, Correspondence<Attribute, Matchable> correspondence) {
+		return record.getCuisine();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Restaurant, Attribute> group, Restaurant fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
-		FusedValue<String, Restaurant, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setName(fused.getValue());
-		fusedRecord.setAttributeProvenance(Restaurant.NAME, fused.getOriginalIds());
+		FusedValue<List<Cuisine>, Restaurant, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
+		fusedRecord.setCuisine(fused.getValue());
+		fusedRecord.setAttributeProvenance(Restaurant.CUISINES, fused.getOriginalIds());
 	}
 
 }

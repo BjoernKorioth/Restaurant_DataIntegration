@@ -1,15 +1,15 @@
 package de.uni_mannheim.informatik.dws.wdi.Fusion.evaluation;
 
-import java.util.HashSet;
-import java.util.Set;
 
-import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Cuisine;
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Neighborhood;
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.EvaluationRule;
 import de.uni_mannheim.informatik.dws.winter.model.Correspondence;
 import de.uni_mannheim.informatik.dws.winter.model.Matchable;
 import de.uni_mannheim.informatik.dws.winter.model.defaultmodel.Attribute;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class NeighborhoodEvaluationRule extends EvaluationRule<Restaurant, Attribute> {
 
@@ -22,12 +22,12 @@ public class NeighborhoodEvaluationRule extends EvaluationRule<Restaurant, Attri
 			// lists
 			// in your project, you should have actor ids which you use here
 			// (and in the identity resolution)
-			neighborhoods1.add(a.getName());
+			neighborhoods1.add(a.getName().toLowerCase());
 		}
 
 		Set<String> neighborhoods2 = new HashSet<>();
 		for (Neighborhood a : record2.getNeighborhood()) {
-			neighborhoods2.add(a.getName());
+			neighborhoods2.add(a.getName().toLowerCase());
 		}
 
 		return neighborhoods1.containsAll(neighborhoods2) && neighborhoods2.containsAll(neighborhoods1);

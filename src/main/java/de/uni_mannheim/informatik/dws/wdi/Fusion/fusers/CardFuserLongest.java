@@ -1,5 +1,6 @@
 package de.uni_mannheim.informatik.dws.wdi.Fusion.fusers;
 
+
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.string.LongestString;
@@ -24,7 +25,7 @@ public void fuse(RecordGroup<Restaurant, Attribute> group, Restaurant fusedRecor
 FusedValue<String, Restaurant, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
 
 // set the value for the fused record
-fusedRecord.setAddress(fused.getValue());
+fusedRecord.setCard(fused.getValue());
 
 // add provenance info
 fusedRecord.setAttributeProvenance(Restaurant.CARD, fused.getOriginalIds());

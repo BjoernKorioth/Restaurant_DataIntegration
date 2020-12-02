@@ -1,5 +1,6 @@
 package de.uni_mannheim.informatik.dws.wdi.Fusion.fusers;
 
+
 import de.uni_mannheim.informatik.dws.wdi.Fusion.model.Restaurant;
 import de.uni_mannheim.informatik.dws.winter.datafusion.AttributeValueFuser;
 import de.uni_mannheim.informatik.dws.winter.datafusion.conflictresolution.meta.FavourSources;
@@ -23,13 +24,13 @@ public class PriceFuserFavourSource extends AttributeValueFuser<String, Restaura
 
 	@Override
 	public String getValue(Restaurant record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getName();
+		return record.getPrice();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Restaurant, Attribute> group, Restaurant fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Restaurant, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setName(fused.getValue());
+		fusedRecord.setPrice(fused.getValue());
 		fusedRecord.setAttributeProvenance(Restaurant.PRICE, fused.getOriginalIds());
 	}
 
