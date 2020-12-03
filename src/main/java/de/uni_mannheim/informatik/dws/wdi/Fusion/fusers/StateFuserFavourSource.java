@@ -23,13 +23,13 @@ public class StateFuserFavourSource extends AttributeValueFuser<String, Restaura
 
 	@Override
 	public String getValue(Restaurant record, Correspondence<Attribute, Matchable> correspondence) {
-		return record.getName();
+		return record.getState();
 	}
 
 	@Override
 	public void fuse(RecordGroup<Restaurant, Attribute> group, Restaurant fusedRecord, Processable<Correspondence<Attribute, Matchable>> schemaCorrespondences, Attribute schemaElement) {
 		FusedValue<String, Restaurant, Attribute> fused = getFusedValue(group, schemaCorrespondences, schemaElement);
-		fusedRecord.setName(fused.getValue());
+		fusedRecord.setState(fused.getValue());
 		fusedRecord.setAttributeProvenance(Restaurant.STATE, fused.getOriginalIds());
 	}
 

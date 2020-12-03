@@ -30,7 +30,7 @@ public class CuisineEvaluationRule extends EvaluationRule<Restaurant, Attribute>
 			cuisines2.add(a.getName().toLowerCase());
 		}
 
-		return cuisines1.containsAll(cuisines2) && cuisines2.containsAll(cuisines1);
+		return cuisines2.containsAll(cuisines1);
 	}
 
 	/* (non-Javadoc)

@@ -42,7 +42,7 @@ public class DataFusion_Main {
 		 *
 		 */
 
-	private static final org.slf4j.Logger logger = WinterLogManager.activateLogger("traceFile");
+	private static final Logger logger = WinterLogManager.activateLogger("traceFile");
 		
 	    public static void main( String[] args ) throws Exception
 	    {
@@ -90,23 +90,23 @@ public class DataFusion_Main {
 			// add attribute fusers
 			strategy.addAttributeFuser(Restaurant.ADDRESS, new AddressFuserShortest(),new AddressEvaluationRule());
 
-//			strategy.addAttributeFuser(Restaurant.CARD, new CardFuserVoting(), new CardEvaluationRule());
-//
-//			strategy.addAttributeFuser(Restaurant.CITY,new CityFuserVoting(),new CityEvaluationRule());
-//
-//			strategy.addAttributeFuser(Restaurant.ZIP,new ZIPFuserVoting(),new ZIPEvaluationRule());
-//			strategy.addAttributeFuser(Restaurant.STATE,new StateFuserVoting(),new StateEvaluationRule());
-//
-			strategy.addAttributeFuser(Restaurant.NAME,new NameFuserFavourSource(),new NameEvaluationRule());
-//
-//			strategy.addAttributeFuser(Restaurant.WEBSITE,new WebsiteFuserShortest(),new WebsiteEvaluationRule());
-//			strategy.addAttributeFuser(Restaurant.PRICE,new PriceFuserFavourSource(),new PriceEvaluationRule());
-//
-//			strategy.addAttributeFuser(Restaurant.CUISINES,new CuisineFuserFavourSource(),new CuisineEvaluationRule());
-//			
-//			strategy.addAttributeFuser(Restaurant.RATING,new RatingFuserAverage(),new RatingEvaluation());
+			strategy.addAttributeFuser(Restaurant.CARD, new CardFuserVoting(), new CardEvaluationRule());
 
-//		strategy.addAttributeFuser(Restaurant.NEIGHBORHOODS,new NeighborhoodFuserFavourSource(),new NeighborhoodEvaluationRule());
+			strategy.addAttributeFuser(Restaurant.CITY,new CityFuserVoting(),new CityEvaluationRule());
+
+			strategy.addAttributeFuser(Restaurant.ZIP,new ZIPFuserVoting(),new ZIPEvaluationRule());
+			strategy.addAttributeFuser(Restaurant.STATE,new StateFuserFavourSource(),new StateEvaluationRule());
+
+			strategy.addAttributeFuser(Restaurant.NAME,new NameFuserFavourSource(),new NameEvaluationRule());
+
+			strategy.addAttributeFuser(Restaurant.WEBSITE,new WebsiteFuserShortest(),new WebsiteEvaluationRule());
+			strategy.addAttributeFuser(Restaurant.PRICE,new PriceFuserFavourSource(),new PriceEvaluationRule());
+
+			strategy.addAttributeFuser(Restaurant.CUISINES,new CuisineFuserFavourSource(),new CuisineEvaluationRule());
+			
+			strategy.addAttributeFuser(Restaurant.RATING,new RatingFuserAverage(),new RatingEvaluation());
+
+			strategy.addAttributeFuser(Restaurant.NEIGHBORHOODS,new NeighborhoodFuserFavourSource(),new NeighborhoodEvaluationRule());
 
 
 

@@ -87,11 +87,13 @@ public class RestaurantXMLFormatter extends XMLFormatter<Restaurant> {
 		neighborhoodRoot.setAttribute("provenance",
 				record.getMergedAttributeProvenance(Restaurant.CUISINES));
 
+		try {
 		for (Neighborhood a : record.getNeighborhood()) {
 			neighborhoodRoot.appendChild(neighborhoodFormatter
 					.createElementFromRecord(a, doc));
 		}
-
+		} catch (Exception e) {};
 		return neighborhoodRoot;
+		
 	}
 }

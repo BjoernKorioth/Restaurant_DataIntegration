@@ -1456,3 +1456,952 @@
 [TRACE] 2020-12-03 19:44:18.055 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Address: 0,40
 [TRACE] 2020-12-03 19:44:18.056 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Name: 0,47
 [INFO ] 2020-12-03 19:44:18.057 [de.uni_mannheim.informatik.dw.wdi.Fusion.DataFusion_Main] - Accuracy: 0,43
+[INFO ] 2020-12-03 19:52:59.254 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 19:52:59.574 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 19:52:59.576 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 19:52:59.722 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 19:52:59.724 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 19:52:59.728 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 19:52:59.729 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 19:52:59.734 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 19:52:59.736 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 19:52:59.737 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 19:52:59.738 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 19:52:59.740 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 19:52:59.744 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 19:52:59.746 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 19:53:00.730 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 19:53:01.102 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 19:53:01.102 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 19:53:01.151 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 19:53:01.152 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 19:53:01.152 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 19:53:01.153 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 19:53:01.153 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 19:53:01.154 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 19:53:01.154 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 19:53:01.155 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 19:53:01.156 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 19:53:01.156 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 19:53:01.157 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 19:53:02.640 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 19:53:02.805 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 19:53:02.806 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 19:53:02.878 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 19:53:02.879 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 19:53:02.880 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 19:53:02.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 19:53:02.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 19:53:02.882 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 19:53:02.882 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 19:53:02.883 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 19:53:02.883 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 19:53:02.884 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 19:53:02.884 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 19:53:03.091 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 19:53:03.092 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 19:53:03.093 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 19:53:03.096 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 19:53:03.097 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 19:53:03.097 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 19:53:03.099 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 19:53:03.099 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 19:53:03.101 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 19:53:03.102 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 19:53:03.103 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 19:53:03.115 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 19:53:03.126 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 19:53:03.558 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Address: 0,74
+[INFO ] 2020-12-03 19:53:03.560 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Name: 0,64
+[INFO ] 2020-12-03 19:53:04.064 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[INFO ] 2020-12-03 19:53:04.070 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 1,00
+[INFO ] 2020-12-03 19:53:04.070 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 19:53:04.079 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 19:53:04.080 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[TRACE] 2020-12-03 19:53:04.863 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Address': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / null] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 19:53:04.864 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2020-12-03 19:53:04.866 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Name: 0,47
+[TRACE] 2020-12-03 19:53:04.867 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Address: 0,40
+[INFO ] 2020-12-03 19:53:04.867 [de.uni_mannheim.informatik.dw.wdi.Fusion.DataFusion_Main] - Accuracy: 0,43
+[INFO ] 2020-12-03 20:03:05.477 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:03:05.752 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:03:05.754 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:03:05.814 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:03:05.815 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:03:05.816 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:03:05.817 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:03:05.817 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:03:05.818 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:03:05.819 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:03:05.820 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:03:05.821 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:03:05.822 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:03:05.822 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:03:06.754 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:03:07.061 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:03:07.061 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:03:07.109 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:03:07.110 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:03:07.111 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:03:07.112 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:03:07.112 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:03:07.114 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:03:07.115 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:03:07.115 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:03:07.116 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:03:07.117 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:03:07.118 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:03:09.100 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:03:09.673 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:03:09.673 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:03:09.781 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:03:09.784 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:03:09.816 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:03:09.819 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:03:09.821 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:03:09.834 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:03:09.837 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:03:09.838 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:03:09.841 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:03:09.843 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:03:09.844 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:03:10.337 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 20:03:10.339 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 20:03:10.340 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 20:03:10.343 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 20:03:10.345 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 20:03:10.346 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 20:03:10.347 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 20:03:10.349 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 20:03:10.349 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 20:03:10.350 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 20:03:10.351 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 20:03:10.372 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 20:03:10.382 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 20:03:11.106 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Address: 0,74
+[INFO ] 2020-12-03 20:03:11.114 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Name: 0,64
+[INFO ] 2020-12-03 20:03:12.096 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[INFO ] 2020-12-03 20:03:12.105 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 1,00
+[INFO ] 2020-12-03 20:03:12.106 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:03:12.128 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:03:12.129 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[TRACE] 2020-12-03 20:03:13.275 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Address': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / null] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 20:03:13.277 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2020-12-03 20:03:13.278 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Name: 1,00
+[TRACE] 2020-12-03 20:03:13.279 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Address: 0,93
+[INFO ] 2020-12-03 20:03:13.279 [de.uni_mannheim.informatik.dw.wdi.Fusion.DataFusion_Main] - Accuracy: 0,97
+[INFO ] 2020-12-03 20:04:32.600 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:04:32.896 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:04:32.899 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:04:32.994 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:04:32.995 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:04:32.996 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:04:32.998 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:04:32.999 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:04:33.000 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:04:33.000 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:04:33.001 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:04:33.002 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:04:33.003 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:04:33.004 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:04:34.180 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:04:34.565 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:04:34.565 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:04:34.608 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:04:34.609 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:04:34.609 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:04:34.611 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:04:34.611 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:04:34.612 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:04:34.613 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:04:34.613 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:04:34.614 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:04:34.615 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:04:34.615 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:04:36.071 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:04:36.338 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:04:36.338 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:04:36.423 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:04:36.424 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:04:36.424 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:04:36.425 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:04:36.425 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:04:36.425 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:04:36.427 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:04:36.428 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:04:36.429 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:04:36.429 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:04:36.429 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:04:36.566 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 20:04:36.567 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 20:04:36.568 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 20:04:36.572 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 20:04:36.572 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 20:04:36.573 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 20:04:36.575 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 20:04:36.576 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 20:04:36.579 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 20:04:36.580 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 20:04:36.580 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 20:04:36.596 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 20:04:36.605 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 20:04:37.792 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:04:37.793 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Neighborhoods: 0,49
+[INFO ] 2020-12-03 20:04:37.796 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Address: 0,74
+[INFO ] 2020-12-03 20:04:37.800 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Price: 0,80
+[INFO ] 2020-12-03 20:04:37.801 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Cuisines: 0,09
+[INFO ] 2020-12-03 20:04:37.802 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	State: 0,84
+[INFO ] 2020-12-03 20:04:37.803 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Rating: 0,77
+[INFO ] 2020-12-03 20:04:37.805 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Website: 0,44
+[INFO ] 2020-12-03 20:04:37.806 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	City: 0,98
+[INFO ] 2020-12-03 20:04:37.807 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Name: 0,64
+[INFO ] 2020-12-03 20:04:37.808 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Card: 0,94
+[INFO ] 2020-12-03 20:07:44.304 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:07:44.550 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:07:44.551 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:07:44.612 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:07:44.613 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:07:44.617 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:07:44.619 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:07:44.620 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:07:44.620 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:07:44.621 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:07:44.622 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:07:44.623 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:07:44.625 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:07:44.626 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:07:45.553 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:07:45.861 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:07:45.862 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:07:45.907 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:07:45.907 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:07:45.907 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:07:45.909 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:07:45.909 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:07:45.910 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:07:45.910 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:07:45.911 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:07:45.911 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:07:45.912 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:07:45.912 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:07:47.187 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:07:47.548 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:07:47.548 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:07:47.749 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:07:47.750 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:07:47.751 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:07:47.751 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:07:47.751 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:07:47.752 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:07:47.752 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:07:47.753 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:07:47.754 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:07:47.754 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:07:47.755 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:07:47.844 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 20:07:47.845 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 20:07:47.845 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 20:07:47.848 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 20:07:47.848 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 20:07:47.849 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 20:07:47.850 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 20:07:47.851 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 20:07:47.853 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 20:07:47.854 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 20:07:47.854 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 20:07:47.870 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 20:07:47.897 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 20:07:48.863 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:07:48.864 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Neighborhoods: 0,49
+[INFO ] 2020-12-03 20:07:48.865 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Address: 0,74
+[INFO ] 2020-12-03 20:07:48.868 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Price: 0,80
+[INFO ] 2020-12-03 20:07:48.868 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Cuisines: 0,09
+[INFO ] 2020-12-03 20:07:48.870 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	State: 0,84
+[INFO ] 2020-12-03 20:07:48.870 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Rating: 0,77
+[INFO ] 2020-12-03 20:07:48.871 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Website: 0,44
+[INFO ] 2020-12-03 20:07:48.872 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	City: 0,98
+[INFO ] 2020-12-03 20:07:48.877 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Name: 0,64
+[INFO ] 2020-12-03 20:07:48.878 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Card: 0,94
+[INFO ] 2020-12-03 20:09:27.733 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:09:27.970 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:09:27.972 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:09:28.041 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:09:28.043 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:09:28.044 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:09:28.045 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:09:28.046 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:09:28.047 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:09:28.048 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:09:28.049 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:09:28.051 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:09:28.052 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:09:28.054 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:09:29.016 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:09:29.342 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:09:29.344 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:09:29.416 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:09:29.417 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:09:29.419 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:09:29.424 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:09:29.424 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:09:29.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:09:29.427 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:09:29.428 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:09:29.429 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:09:29.430 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:09:29.431 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:09:31.435 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:09:32.062 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:09:32.062 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:09:32.161 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:09:32.161 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:09:32.162 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:09:32.162 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:09:32.164 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:09:32.165 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:09:32.166 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:09:32.167 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:09:32.167 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:09:32.168 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:09:32.169 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:09:32.300 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 20:09:32.301 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 20:09:32.301 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 20:09:32.304 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 20:09:32.305 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 20:09:32.306 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 20:09:32.341 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 20:09:32.341 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 20:09:32.342 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 20:09:32.343 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 20:09:32.344 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 20:09:32.360 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 20:09:32.373 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 20:09:33.657 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:09:33.659 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Neighborhoods: 0,49
+[INFO ] 2020-12-03 20:09:33.659 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Address: 0,74
+[INFO ] 2020-12-03 20:09:33.661 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Price: 0,80
+[INFO ] 2020-12-03 20:09:33.662 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Cuisines: 0,09
+[INFO ] 2020-12-03 20:09:33.665 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	State: 0,84
+[INFO ] 2020-12-03 20:09:33.665 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Rating: 0,77
+[INFO ] 2020-12-03 20:09:33.666 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Website: 0,44
+[INFO ] 2020-12-03 20:09:33.667 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	City: 0,98
+[INFO ] 2020-12-03 20:09:33.667 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Name: 0,64
+[INFO ] 2020-12-03 20:09:33.668 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Card: 0,94
+[INFO ] 2020-12-03 20:09:36.019 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[INFO ] 2020-12-03 20:09:36.026 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,98
+[INFO ] 2020-12-03 20:09:36.026 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:09:36.051 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:09:36.052 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:09:36.052 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,98
+[INFO ] 2020-12-03 20:09:36.053 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,96
+[INFO ] 2020-12-03 20:09:36.053 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:09:36.054 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:09:36.054 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 1,00
+[INFO ] 2020-12-03 20:09:36.054 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:09:36.055 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,86
+[INFO ] 2020-12-03 20:09:36.055 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:09:36.055 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:11:24.165 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:11:24.374 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:11:24.375 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:11:24.421 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:11:24.422 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:11:24.423 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:11:24.424 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:11:24.426 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:11:24.430 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:11:24.430 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:11:24.431 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:11:24.432 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:11:24.432 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:11:24.435 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:11:25.517 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:11:25.837 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:11:25.838 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:11:25.895 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:11:25.897 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:11:25.897 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:11:25.899 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:11:25.899 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:11:25.900 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:11:25.901 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:11:25.902 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:11:25.902 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:11:25.903 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:11:25.904 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:11:27.546 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:11:27.723 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:11:27.723 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:11:27.899 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:11:27.899 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:11:27.900 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:11:27.901 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:11:27.902 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:11:27.904 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:11:27.909 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:11:27.911 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:11:27.912 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:11:27.913 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:11:27.913 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:11:28.066 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 20:11:28.066 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 20:11:28.067 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 20:11:28.069 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 20:11:28.070 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 20:11:28.071 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 20:11:28.071 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 20:11:28.072 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 20:11:28.072 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 20:11:28.073 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 20:11:28.074 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 20:11:28.085 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 20:11:28.102 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 20:11:29.039 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:11:29.040 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Neighborhoods: 0,49
+[INFO ] 2020-12-03 20:11:29.040 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Address: 0,74
+[INFO ] 2020-12-03 20:11:29.041 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Price: 0,80
+[INFO ] 2020-12-03 20:11:29.041 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Cuisines: 0,09
+[INFO ] 2020-12-03 20:11:29.042 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	State: 0,84
+[INFO ] 2020-12-03 20:11:29.042 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Rating: 0,77
+[INFO ] 2020-12-03 20:11:29.044 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Website: 0,44
+[INFO ] 2020-12-03 20:11:29.044 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	City: 0,98
+[INFO ] 2020-12-03 20:11:29.045 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Name: 0,64
+[INFO ] 2020-12-03 20:11:29.046 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Card: 0,94
+[INFO ] 2020-12-03 20:11:31.592 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[INFO ] 2020-12-03 20:11:31.601 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,98
+[INFO ] 2020-12-03 20:11:31.602 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:11:31.618 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:11:31.619 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:11:31.619 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,98
+[INFO ] 2020-12-03 20:11:31.620 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,96
+[INFO ] 2020-12-03 20:11:31.620 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:11:31.621 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:11:31.621 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 1,00
+[INFO ] 2020-12-03 20:11:31.622 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:11:31.622 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,86
+[INFO ] 2020-12-03 20:11:31.622 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:11:31.624 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[TRACE] 2020-12-03 20:11:32.574 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17250+yelp_5827: jerry restaurant / 2323 e thomas road / phoenix] <> [Restaurant yellow_17250: jerry restaurant / 2323 e thomas road / phoenix]
+[TRACE] 2020-12-03 20:11:32.575 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17250+yelp_5827: jerry restaurant / 2323 e thomas road / phoenix] <> [Restaurant yellow_17250: jerry restaurant / 2323 e thomas road / phoenix]
+[TRACE] 2020-12-03 20:11:32.576 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17240+yelp_5921: duck decanter / 1651 e camelback road / phoenix] <> [Restaurant yellow_17240: duck decanter / 1651 e camelback road / phoenix]
+[TRACE] 2020-12-03 20:11:32.577 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17240+yelp_5921: duck decanter / 1651 e camelback road / phoenix] <> [Restaurant yellow_17240: duck decanter / 1651 e camelback road / phoenix]
+[TRACE] 2020-12-03 20:11:32.579 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Card': [Restaurant yelp_421+zomato_6058: upland / 345 park avenue / new york] <> [Restaurant yelp_421: upland / 345 park avenue / new york]
+[TRACE] 2020-12-03 20:11:32.580 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yelp_421+zomato_6058: upland / 345 park avenue / new york] <> [Restaurant yelp_421: upland / 345 park avenue / new york]
+[TRACE] 2020-12-03 20:11:32.580 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yelp_421+zomato_6058: upland / 345 park avenue / new york] <> [Restaurant yelp_421: upland / 345 park avenue / new york]
+[TRACE] 2020-12-03 20:11:32.581 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'State': [Restaurant yelp_8484+zomato_2035: big mama chicken waffles / 9810 forest lane / dallas] <> [Restaurant yelp_8484: big mama chicken waffles / 9810 forest lane / dallas]
+[TRACE] 2020-12-03 20:11:32.581 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yelp_8484+zomato_2035: big mama chicken waffles / 9810 forest lane / dallas] <> [Restaurant yelp_8484: big mama chicken waffles / 9810 forest lane / dallas]
+[TRACE] 2020-12-03 20:11:32.581 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yelp_8484+zomato_2035: big mama chicken waffles / 9810 forest lane / dallas] <> [Restaurant yelp_8484: big mama chicken waffles / 9810 forest lane / dallas]
+[TRACE] 2020-12-03 20:11:32.583 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / dallas] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 20:11:32.584 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / dallas] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 20:11:32.585 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Address': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / dallas] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 20:11:32.585 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_24907+yelp_8333+zomato_1729: fireside pies / 7709 inwood road / dallas] <> [Restaurant yelp_8333: fireside pies / 7709 inwood road / dallas]
+[TRACE] 2020-12-03 20:11:32.586 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'State': [Restaurant yelp_8223+zomato_1500: serious pizza / 2807 elm street / dallas] <> [Restaurant yelp_8223: serious pizza / 2807 elm street / dallas]
+[TRACE] 2020-12-03 20:11:32.587 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yelp_8223+zomato_1500: serious pizza / 2807 elm street / dallas] <> [Restaurant yelp_8223: serious pizza / 2807 elm street / dallas]
+[TRACE] 2020-12-03 20:11:32.588 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_4014+yelp_1005: waba grill / 1134 n vermont avenue / los angeles] <> [Restaurant yellow_4014: waba grill / 1134 n vermont avenue / los angeles]
+[TRACE] 2020-12-03 20:11:32.589 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_4014+yelp_1005: waba grill / 1134 n vermont avenue / los angeles] <> [Restaurant yellow_4014: waba grill / 1134 n vermont avenue / los angeles]
+[TRACE] 2020-12-03 20:11:32.589 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:11:32.592 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:11:32.593 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:11:32.593 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Rating': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:11:32.594 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:11:32.594 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:11:32.595 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:11:32.595 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:11:32.595 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_4067+yelp_1161+zomato_3920: fundamental la / 1303 westwood boulevard / los angeles] <> [Restaurant yellow_4067: fundamental la / 1303 westwood boulevard / los angeles]
+[TRACE] 2020-12-03 20:11:32.596 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_4067+yelp_1161+zomato_3920: fundamental la / 1303 westwood boulevard / los angeles] <> [Restaurant yellow_4067: fundamental la / 1303 westwood boulevard / los angeles]
+[TRACE] 2020-12-03 20:11:32.596 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_4067+yelp_1161+zomato_3920: fundamental la / 1303 westwood boulevard / los angeles] <> [Restaurant yellow_4067: fundamental la / 1303 westwood boulevard / los angeles]
+[TRACE] 2020-12-03 20:11:32.597 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [Restaurant yellow_25400+yelp_8577+zomato_2261: city cafe / 5757 w lovers lane / dallas] <> [Restaurant yelp_8577: city cafe / 5757 w lovers lane / dallas]
+[TRACE] 2020-12-03 20:11:32.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_25400+yelp_8577+zomato_2261: city cafe / 5757 w lovers lane / dallas] <> [Restaurant yelp_8577: city cafe / 5757 w lovers lane / dallas]
+[TRACE] 2020-12-03 20:11:32.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_25400+yelp_8577+zomato_2261: city cafe / 5757 w lovers lane / dallas] <> [Restaurant yelp_8577: city cafe / 5757 w lovers lane / dallas]
+[TRACE] 2020-12-03 20:11:32.598 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17318+yelp_5871: rainbow donuts / 8714 n 7th street / phoenix] <> [Restaurant yellow_17318: rainbow donuts / 8714 n 7th street / phoenix]
+[TRACE] 2020-12-03 20:11:32.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17318+yelp_5871: rainbow donuts / 8714 n 7th street / phoenix] <> [Restaurant yellow_17318: rainbow donuts / 8714 n 7th street / phoenix]
+[TRACE] 2020-12-03 20:11:32.599 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17305+yelp_5112: pizza metro / 2336 w thomas road / phoenix] <> [Restaurant yellow_17305: pizza metro / 2336 w thomas road / phoenix]
+[TRACE] 2020-12-03 20:11:32.600 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17305+yelp_5112: pizza metro / 2336 w thomas road / phoenix] <> [Restaurant yellow_17305: pizza metro / 2336 w thomas road / phoenix]
+[TRACE] 2020-12-03 20:11:32.601 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Rating': [Restaurant yellow_17305+yelp_5112: pizza metro / 2336 w thomas road / phoenix] <> [Restaurant yellow_17305: pizza metro / 2336 w thomas road / phoenix]
+[TRACE] 2020-12-03 20:11:32.609 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_17243+yelp_5804: liyuen / 1602 7th avenue / phoenix] <> [Restaurant yellow_17243: liyuen / 1602 7th avenue / phoenix]
+[TRACE] 2020-12-03 20:11:32.611 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17243+yelp_5804: liyuen / 1602 7th avenue / phoenix] <> [Restaurant yellow_17243: liyuen / 1602 7th avenue / phoenix]
+[TRACE] 2020-12-03 20:11:32.613 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2020-12-03 20:11:32.614 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Name: 1,00
+[TRACE] 2020-12-03 20:11:32.614 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Card: 0,93
+[TRACE] 2020-12-03 20:11:32.615 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	City: 1,00
+[TRACE] 2020-12-03 20:11:32.617 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Price: 0,80
+[TRACE] 2020-12-03 20:11:32.617 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	State: 0,87
+[TRACE] 2020-12-03 20:11:32.619 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Zip: 1,00
+[TRACE] 2020-12-03 20:11:32.619 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Neighborhoods: 0,53
+[TRACE] 2020-12-03 20:11:32.620 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Cuisines: 0,20
+[TRACE] 2020-12-03 20:11:32.624 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Website: 0,27
+[TRACE] 2020-12-03 20:11:32.625 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Rating: 0,87
+[TRACE] 2020-12-03 20:11:32.625 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Address: 0,93
+[INFO ] 2020-12-03 20:11:32.626 [de.uni_mannheim.informatik.dw.wdi.Fusion.DataFusion_Main] - Accuracy: 0,76
+[INFO ] 2020-12-03 20:49:14.183 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:49:14.436 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:49:14.437 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:49:14.480 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:49:14.482 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:49:14.483 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:49:14.484 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:49:14.485 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:49:14.487 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:49:14.488 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:49:14.489 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:49:14.490 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:49:14.491 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:49:14.491 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:49:15.391 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:49:15.655 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:49:15.655 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:49:15.701 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:49:15.702 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:49:15.703 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:49:15.704 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:49:15.705 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:49:15.706 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:49:15.707 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:49:15.708 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:49:15.710 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:49:15.711 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:49:15.711 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:49:17.235 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:49:17.514 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:49:17.514 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:49:17.637 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:49:17.638 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:49:17.640 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:49:17.641 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:49:17.642 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:49:17.642 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:49:17.643 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:49:17.644 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:49:17.644 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:49:17.645 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:49:17.645 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:50:39.010 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:50:39.150 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:50:39.151 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:50:39.207 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:50:39.208 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:50:39.209 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:50:39.211 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:50:39.216 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:50:39.223 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:50:39.225 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:50:39.226 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:50:39.226 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:50:39.227 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:50:39.228 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:50:40.214 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:50:40.694 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:50:40.695 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:50:40.771 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:50:40.771 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:50:40.772 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:50:40.774 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:50:40.775 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:50:40.775 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:50:40.776 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:50:40.777 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:50:40.777 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:50:40.778 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:50:40.779 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:50:42.664 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:50:42.883 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:50:42.884 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:50:42.979 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:50:42.980 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:50:42.981 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:50:42.981 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:50:42.981 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:50:42.982 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:50:42.982 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:50:42.983 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:50:42.984 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:50:42.984 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:50:42.985 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:50:43.120 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 20:50:43.121 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 20:50:43.121 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 20:50:43.127 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 20:50:43.128 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 20:50:43.128 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 20:50:43.129 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 20:50:43.130 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 20:50:43.131 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 20:50:43.131 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 20:50:43.132 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 20:50:43.147 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 20:50:43.159 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 20:50:44.305 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:50:44.306 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Neighborhoods: 0,58
+[INFO ] 2020-12-03 20:50:44.307 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Address: 0,74
+[INFO ] 2020-12-03 20:50:44.309 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Price: 0,80
+[INFO ] 2020-12-03 20:50:44.313 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Cuisines: 0,26
+[INFO ] 2020-12-03 20:50:44.314 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	State: 0,84
+[INFO ] 2020-12-03 20:50:44.315 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Rating: 0,77
+[INFO ] 2020-12-03 20:50:44.316 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Website: 0,44
+[INFO ] 2020-12-03 20:50:44.317 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	City: 0,98
+[INFO ] 2020-12-03 20:50:44.317 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Name: 0,64
+[INFO ] 2020-12-03 20:50:44.318 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Card: 0,94
+[INFO ] 2020-12-03 20:51:50.864 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:51:51.111 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:51:51.113 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:51:51.197 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:51:51.199 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:51:51.200 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:51:51.201 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:51:51.201 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:51:51.202 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:51:51.203 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:51:51.204 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:51:51.205 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:51:51.206 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:51:51.207 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:51:52.220 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:51:52.675 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:51:52.676 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:51:52.745 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:51:52.746 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:51:52.747 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:51:52.752 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:51:52.754 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:51:52.756 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:51:52.756 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:51:52.759 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:51:52.760 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:51:52.761 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:51:52.761 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:51:54.400 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:51:54.588 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:51:54.588 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:51:54.626 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:51:54.626 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:51:54.627 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:51:54.627 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:51:54.627 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:51:54.628 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:51:54.628 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:51:54.629 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:51:54.629 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:51:54.630 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:51:54.630 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:51:54.732 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 20:51:54.743 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 20:51:54.744 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 20:51:54.748 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 20:51:54.749 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 20:51:54.750 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 20:51:54.752 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 20:51:54.753 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 20:51:54.754 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 20:51:54.755 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 20:51:54.755 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 20:51:54.767 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 20:51:54.780 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 20:51:55.757 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:51:55.759 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Neighborhoods: 0,58
+[INFO ] 2020-12-03 20:51:55.760 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Address: 0,74
+[INFO ] 2020-12-03 20:51:55.760 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Price: 0,80
+[INFO ] 2020-12-03 20:51:55.761 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Cuisines: 0,26
+[INFO ] 2020-12-03 20:51:55.762 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	State: 0,84
+[INFO ] 2020-12-03 20:51:55.762 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Rating: 0,77
+[INFO ] 2020-12-03 20:51:55.763 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Website: 0,44
+[INFO ] 2020-12-03 20:51:55.764 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	City: 0,98
+[INFO ] 2020-12-03 20:51:55.765 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Name: 0,64
+[INFO ] 2020-12-03 20:51:55.766 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Card: 0,94
+[ERROR] 2020-12-03 20:51:57.433 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results could not be written to file: data/output/debugResultsDatafusion.csv
+[INFO ] 2020-12-03 20:51:57.441 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,98
+[INFO ] 2020-12-03 20:51:57.441 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:51:57.451 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:51:57.452 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:51:57.452 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,98
+[INFO ] 2020-12-03 20:51:57.452 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,96
+[INFO ] 2020-12-03 20:51:57.453 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:51:57.453 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:51:57.453 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 1,00
+[INFO ] 2020-12-03 20:51:57.453 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:51:57.454 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,86
+[INFO ] 2020-12-03 20:51:57.454 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:51:57.454 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[TRACE] 2020-12-03 20:51:58.173 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17250+yelp_5827: jerry restaurant / 2323 e thomas road / phoenix] <> [Restaurant yellow_17250: jerry restaurant / 2323 e thomas road / phoenix]
+[TRACE] 2020-12-03 20:51:58.175 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17250+yelp_5827: jerry restaurant / 2323 e thomas road / phoenix] <> [Restaurant yellow_17250: jerry restaurant / 2323 e thomas road / phoenix]
+[TRACE] 2020-12-03 20:51:58.176 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17240+yelp_5921: duck decanter / 1651 e camelback road / phoenix] <> [Restaurant yellow_17240: duck decanter / 1651 e camelback road / phoenix]
+[TRACE] 2020-12-03 20:51:58.177 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17240+yelp_5921: duck decanter / 1651 e camelback road / phoenix] <> [Restaurant yellow_17240: duck decanter / 1651 e camelback road / phoenix]
+[TRACE] 2020-12-03 20:51:58.177 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Card': [Restaurant yelp_421+zomato_6058: upland / 345 park avenue / new york] <> [Restaurant yelp_421: upland / 345 park avenue / new york]
+[TRACE] 2020-12-03 20:51:58.178 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yelp_421+zomato_6058: upland / 345 park avenue / new york] <> [Restaurant yelp_421: upland / 345 park avenue / new york]
+[TRACE] 2020-12-03 20:51:58.179 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yelp_421+zomato_6058: upland / 345 park avenue / new york] <> [Restaurant yelp_421: upland / 345 park avenue / new york]
+[TRACE] 2020-12-03 20:51:58.180 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yelp_8484+zomato_2035: big mama chicken waffles / 9810 forest lane / dallas] <> [Restaurant yelp_8484: big mama chicken waffles / 9810 forest lane / dallas]
+[TRACE] 2020-12-03 20:51:58.180 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yelp_8484+zomato_2035: big mama chicken waffles / 9810 forest lane / dallas] <> [Restaurant yelp_8484: big mama chicken waffles / 9810 forest lane / dallas]
+[TRACE] 2020-12-03 20:51:58.180 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / dallas] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 20:51:58.181 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / dallas] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 20:51:58.181 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Address': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / dallas] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 20:51:58.182 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yelp_8223+zomato_1500: serious pizza / 2807 elm street / dallas] <> [Restaurant yelp_8223: serious pizza / 2807 elm street / dallas]
+[TRACE] 2020-12-03 20:51:58.183 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_4014+yelp_1005: waba grill / 1134 n vermont avenue / los angeles] <> [Restaurant yellow_4014: waba grill / 1134 n vermont avenue / los angeles]
+[TRACE] 2020-12-03 20:51:58.183 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_4014+yelp_1005: waba grill / 1134 n vermont avenue / los angeles] <> [Restaurant yellow_4014: waba grill / 1134 n vermont avenue / los angeles]
+[TRACE] 2020-12-03 20:51:58.184 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:51:58.186 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:51:58.188 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:51:58.190 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Rating': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:51:58.190 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:51:58.191 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:51:58.193 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:51:58.194 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:51:58.195 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_4067+yelp_1161+zomato_3920: fundamental la / 1303 westwood boulevard / los angeles] <> [Restaurant yellow_4067: fundamental la / 1303 westwood boulevard / los angeles]
+[TRACE] 2020-12-03 20:51:58.195 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_4067+yelp_1161+zomato_3920: fundamental la / 1303 westwood boulevard / los angeles] <> [Restaurant yellow_4067: fundamental la / 1303 westwood boulevard / los angeles]
+[TRACE] 2020-12-03 20:51:58.196 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_4067+yelp_1161+zomato_3920: fundamental la / 1303 westwood boulevard / los angeles] <> [Restaurant yellow_4067: fundamental la / 1303 westwood boulevard / los angeles]
+[TRACE] 2020-12-03 20:51:58.196 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [Restaurant yellow_25400+yelp_8577+zomato_2261: city cafe / 5757 w lovers lane / dallas] <> [Restaurant yelp_8577: city cafe / 5757 w lovers lane / dallas]
+[TRACE] 2020-12-03 20:51:58.197 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_25400+yelp_8577+zomato_2261: city cafe / 5757 w lovers lane / dallas] <> [Restaurant yelp_8577: city cafe / 5757 w lovers lane / dallas]
+[TRACE] 2020-12-03 20:51:58.197 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_25400+yelp_8577+zomato_2261: city cafe / 5757 w lovers lane / dallas] <> [Restaurant yelp_8577: city cafe / 5757 w lovers lane / dallas]
+[TRACE] 2020-12-03 20:51:58.198 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17318+yelp_5871: rainbow donuts / 8714 n 7th street / phoenix] <> [Restaurant yellow_17318: rainbow donuts / 8714 n 7th street / phoenix]
+[TRACE] 2020-12-03 20:51:58.200 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17318+yelp_5871: rainbow donuts / 8714 n 7th street / phoenix] <> [Restaurant yellow_17318: rainbow donuts / 8714 n 7th street / phoenix]
+[TRACE] 2020-12-03 20:51:58.204 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17305+yelp_5112: pizza metro / 2336 w thomas road / phoenix] <> [Restaurant yellow_17305: pizza metro / 2336 w thomas road / phoenix]
+[TRACE] 2020-12-03 20:51:58.205 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17305+yelp_5112: pizza metro / 2336 w thomas road / phoenix] <> [Restaurant yellow_17305: pizza metro / 2336 w thomas road / phoenix]
+[TRACE] 2020-12-03 20:51:58.206 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Rating': [Restaurant yellow_17305+yelp_5112: pizza metro / 2336 w thomas road / phoenix] <> [Restaurant yellow_17305: pizza metro / 2336 w thomas road / phoenix]
+[TRACE] 2020-12-03 20:51:58.206 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_17243+yelp_5804: liyuen / 1602 7th avenue / phoenix] <> [Restaurant yellow_17243: liyuen / 1602 7th avenue / phoenix]
+[TRACE] 2020-12-03 20:51:58.206 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17243+yelp_5804: liyuen / 1602 7th avenue / phoenix] <> [Restaurant yellow_17243: liyuen / 1602 7th avenue / phoenix]
+[TRACE] 2020-12-03 20:51:58.207 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2020-12-03 20:51:58.207 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Name: 1,00
+[TRACE] 2020-12-03 20:51:58.209 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Card: 0,93
+[TRACE] 2020-12-03 20:51:58.210 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	City: 1,00
+[TRACE] 2020-12-03 20:51:58.211 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Price: 0,80
+[TRACE] 2020-12-03 20:51:58.211 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	State: 1,00
+[TRACE] 2020-12-03 20:51:58.212 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Zip: 1,00
+[TRACE] 2020-12-03 20:51:58.212 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Neighborhoods: 0,53
+[TRACE] 2020-12-03 20:51:58.213 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Cuisines: 0,27
+[TRACE] 2020-12-03 20:51:58.213 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Website: 0,27
+[TRACE] 2020-12-03 20:51:58.215 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Rating: 0,87
+[TRACE] 2020-12-03 20:51:58.215 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Address: 0,93
+[INFO ] 2020-12-03 20:51:58.216 [de.uni_mannheim.informatik.dw.wdi.Fusion.DataFusion_Main] - Accuracy: 0,78
+[INFO ] 2020-12-03 20:54:28.135 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:54:28.400 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:54:28.402 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:54:28.481 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:54:28.482 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:54:28.483 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:54:28.485 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:54:28.485 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:54:28.486 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:54:28.487 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:54:28.488 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:54:28.489 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:54:28.490 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:54:28.490 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:54:29.787 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:54:30.120 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:54:30.121 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:54:30.179 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:54:30.180 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:54:30.182 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:54:30.183 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:54:30.187 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:54:30.188 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:54:30.189 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:54:30.190 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:54:30.191 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:54:30.192 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:54:30.193 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:54:32.374 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:54:32.694 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:54:32.695 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:54:32.756 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:54:32.757 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:54:32.758 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:54:32.759 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:54:32.759 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:54:32.760 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:54:32.760 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:54:32.761 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:54:32.762 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:54:32.765 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:54:32.766 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:54:32.942 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 20:54:32.944 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 20:54:32.945 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 20:54:32.949 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 20:54:32.951 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 20:54:32.954 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 20:54:32.956 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 20:54:32.956 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 20:54:32.962 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 20:54:32.965 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 20:54:32.967 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 20:54:32.983 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 20:54:33.005 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 20:57:08.548 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:57:08.793 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:57:08.795 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:57:08.846 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:57:08.849 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:57:08.850 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:57:08.851 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:57:08.852 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:57:08.856 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:57:08.857 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:57:08.858 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:57:08.859 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:57:08.859 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:57:08.860 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:57:10.215 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:57:10.594 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:57:10.595 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:57:10.670 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:57:10.671 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:57:10.674 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:57:10.677 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:57:10.677 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:57:10.679 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:57:10.680 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:57:10.680 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:57:10.681 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:57:10.682 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:57:10.682 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:57:12.526 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:57:12.800 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:57:12.801 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:57:12.872 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:57:12.875 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:57:12.876 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:57:12.876 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:57:12.877 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:57:12.880 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:57:12.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:57:12.881 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:57:12.882 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:57:12.884 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:57:12.884 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:57:13.034 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 20:57:13.036 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 20:57:13.037 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 20:57:13.046 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 20:57:13.047 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 20:57:13.050 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 20:57:13.052 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 20:57:13.054 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 20:57:13.054 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 20:57:13.056 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 20:57:13.061 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 20:57:13.080 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 20:57:13.111 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 20:59:49.155 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 6960 elements from zomato.xml
+[INFO ] 2020-12-03 20:59:49.407 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,64
+[INFO ] 2020-12-03 20:59:49.409 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:59:49.490 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:59:49.491 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:59:49.494 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,00
+[INFO ] 2020-12-03 20:59:49.495 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,00
+[INFO ] 2020-12-03 20:59:49.496 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:59:49.499 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:59:49.499 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,00
+[INFO ] 2020-12-03 20:59:49.500 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,99
+[INFO ] 2020-12-03 20:59:49.501 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,00
+[INFO ] 2020-12-03 20:59:49.501 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:59:49.503 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:59:50.709 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 9947 elements from yelp.xml
+[INFO ] 2020-12-03 20:59:51.117 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,96
+[INFO ] 2020-12-03 20:59:51.118 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:59:51.176 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:59:51.177 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:59:51.180 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 1,00
+[INFO ] 2020-12-03 20:59:51.182 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 1,00
+[INFO ] 2020-12-03 20:59:51.184 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:59:51.185 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:59:51.186 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,78
+[INFO ] 2020-12-03 20:59:51.187 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:59:51.188 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,77
+[INFO ] 2020-12-03 20:59:51.189 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:59:51.190 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:59:53.013 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 28787 elements from yellow_pages.xml
+[INFO ] 2020-12-03 20:59:53.320 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,81
+[INFO ] 2020-12-03 20:59:53.321 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:59:53.425 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:59:53.427 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:59:53.427 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,60
+[INFO ] 2020-12-03 20:59:53.428 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,46
+[INFO ] 2020-12-03 20:59:53.431 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:59:53.432 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:59:53.434 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 0,97
+[INFO ] 2020-12-03 20:59:53.435 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 0,93
+[INFO ] 2020-12-03 20:59:53.436 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,61
+[INFO ] 2020-12-03 20:59:53.437 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 0,38
+[INFO ] 2020-12-03 20:59:53.438 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[INFO ] 2020-12-03 20:59:53.600 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - Group Size Distribtion of 7259 groups:
+[INFO ] 2020-12-03 20:59:53.601 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	Group Size 	| Frequency 
+[INFO ] 2020-12-03 20:59:53.603 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 	————————————————————————————
+[INFO ] 2020-12-03 20:59:53.611 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		2	| 	5867
+[INFO ] 2020-12-03 20:59:53.611 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		3	| 	1216
+[INFO ] 2020-12-03 20:59:53.612 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		4	| 	112
+[INFO ] 2020-12-03 20:59:53.613 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		5	| 	41
+[INFO ] 2020-12-03 20:59:53.615 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		6	| 	10
+[INFO ] 2020-12-03 20:59:53.616 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		7	| 	6
+[INFO ] 2020-12-03 20:59:53.616 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		8	| 	2
+[INFO ] 2020-12-03 20:59:53.617 [de.uni_mannheim.informatik.dws.winter.datafusion.CorrespondenceSet] - 		10	| 	5
+[INFO ] 2020-12-03 20:59:53.637 [de.uni_mannheim.informatik.dws.winter.model.io.XMLMatchableReader] - Loading 15 elements from Golden_Standard_Fusion1.1.xml
+[INFO ] 2020-12-03 20:59:53.651 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - Attribute Consistencies:
+[INFO ] 2020-12-03 20:59:54.955 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:59:54.956 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Neighborhoods: 0,58
+[INFO ] 2020-12-03 20:59:54.959 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Address: 0,74
+[INFO ] 2020-12-03 20:59:54.961 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Price: 0,80
+[INFO ] 2020-12-03 20:59:54.964 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Cuisines: 0,26
+[INFO ] 2020-12-03 20:59:54.965 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	State: 0,84
+[INFO ] 2020-12-03 20:59:54.968 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Rating: 0,77
+[INFO ] 2020-12-03 20:59:54.970 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Website: 0,82
+[INFO ] 2020-12-03 20:59:54.971 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	City: 0,98
+[INFO ] 2020-12-03 20:59:54.973 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Name: 0,64
+[INFO ] 2020-12-03 20:59:54.974 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEngine] - 	Card: 0,94
+[INFO ] 2020-12-03 20:59:57.206 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionStrategy] - Debug results written to file: data/output/debugResultsDatafusion.csv
+[INFO ] 2020-12-03 20:59:57.211 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - DataSet density: 0,98
+[INFO ] 2020-12-03 20:59:57.211 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - Attributes densities:
+[INFO ] 2020-12-03 20:59:57.226 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Name: 1,00
+[INFO ] 2020-12-03 20:59:57.226 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	City: 1,00
+[INFO ] 2020-12-03 20:59:57.227 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Card: 0,98
+[INFO ] 2020-12-03 20:59:57.227 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Price: 0,96
+[INFO ] 2020-12-03 20:59:57.228 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	State: 1,00
+[INFO ] 2020-12-03 20:59:57.228 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Zip: 1,00
+[INFO ] 2020-12-03 20:59:57.228 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Neighborhoods: 1,00
+[INFO ] 2020-12-03 20:59:57.229 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Cuisines: 1,00
+[INFO ] 2020-12-03 20:59:57.229 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Website: 0,86
+[INFO ] 2020-12-03 20:59:57.229 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Rating: 1,00
+[INFO ] 2020-12-03 20:59:57.230 [de.uni_mannheim.informatik.dws.winter.model.FusibleHashedDataSet] - 	Address: 1,00
+[TRACE] 2020-12-03 20:59:58.276 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17250+yelp_5827: jerry restaurant / 2323 e thomas road / phoenix] <> [Restaurant yellow_17250: jerry restaurant / 2323 e thomas road / phoenix]
+[TRACE] 2020-12-03 20:59:58.277 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17250+yelp_5827: jerry restaurant / 2323 e thomas road / phoenix] <> [Restaurant yellow_17250: jerry restaurant / 2323 e thomas road / phoenix]
+[TRACE] 2020-12-03 20:59:58.278 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17240+yelp_5921: duck decanter / 1651 e camelback road / phoenix] <> [Restaurant yellow_17240: duck decanter / 1651 e camelback road / phoenix]
+[TRACE] 2020-12-03 20:59:58.279 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Card': [Restaurant yelp_421+zomato_6058: upland / 345 park avenue / new york] <> [Restaurant yelp_421: upland / 345 park avenue / new york]
+[TRACE] 2020-12-03 20:59:58.279 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yelp_421+zomato_6058: upland / 345 park avenue / new york] <> [Restaurant yelp_421: upland / 345 park avenue / new york]
+[TRACE] 2020-12-03 20:59:58.280 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yelp_421+zomato_6058: upland / 345 park avenue / new york] <> [Restaurant yelp_421: upland / 345 park avenue / new york]
+[TRACE] 2020-12-03 20:59:58.280 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yelp_8484+zomato_2035: big mama chicken waffles / 9810 forest lane / dallas] <> [Restaurant yelp_8484: big mama chicken waffles / 9810 forest lane / dallas]
+[TRACE] 2020-12-03 20:59:58.281 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yelp_8484+zomato_2035: big mama chicken waffles / 9810 forest lane / dallas] <> [Restaurant yelp_8484: big mama chicken waffles / 9810 forest lane / dallas]
+[TRACE] 2020-12-03 20:59:58.281 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / dallas] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 20:59:58.282 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / dallas] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 20:59:58.283 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Address': [Restaurant yellow_26274+yelp_8340+zomato_2292: ming place china bistro / 5715 lemmon avenue / dallas] <> [Restaurant yelp_8340: ming place china bistro / 5715 lemmon avenue 3 / dallas]
+[TRACE] 2020-12-03 20:59:58.283 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yelp_8223+zomato_1500: serious pizza / 2807 elm street / dallas] <> [Restaurant yelp_8223: serious pizza / 2807 elm street / dallas]
+[TRACE] 2020-12-03 20:59:58.284 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_4014+yelp_1005: waba grill / 1134 n vermont avenue / los angeles] <> [Restaurant yellow_4014: waba grill / 1134 n vermont avenue / los angeles]
+[TRACE] 2020-12-03 20:59:58.284 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:59:58.285 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:59:58.285 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:59:58.286 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Rating': [Restaurant yellow_24683+yelp_8612+zomato_1959: smashburger / 2222 mckinney avenue / dallas] <> [Restaurant yelp_8612: smashburger / 2222 mckinney avenue / dallas]
+[TRACE] 2020-12-03 20:59:58.286 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:59:58.288 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:59:58.290 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_4101+yelp_1449: empanada factory / 2513 robertson boulevard / los angeles] <> [Restaurant yellow_4101: empanada factory / 2513 robertson boulevard / los angeles]
+[TRACE] 2020-12-03 20:59:58.291 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_4067+yelp_1161+zomato_3920: fundamental la / 1303 westwood boulevard / los angeles] <> [Restaurant yellow_4067: fundamental la / 1303 westwood boulevard / los angeles]
+[TRACE] 2020-12-03 20:59:58.291 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_4067+yelp_1161+zomato_3920: fundamental la / 1303 westwood boulevard / los angeles] <> [Restaurant yellow_4067: fundamental la / 1303 westwood boulevard / los angeles]
+[TRACE] 2020-12-03 20:59:58.293 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Price': [Restaurant yellow_25400+yelp_8577+zomato_2261: city cafe / 5757 w lovers lane / dallas] <> [Restaurant yelp_8577: city cafe / 5757 w lovers lane / dallas]
+[TRACE] 2020-12-03 20:59:58.294 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_25400+yelp_8577+zomato_2261: city cafe / 5757 w lovers lane / dallas] <> [Restaurant yelp_8577: city cafe / 5757 w lovers lane / dallas]
+[TRACE] 2020-12-03 20:59:58.294 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17318+yelp_5871: rainbow donuts / 8714 n 7th street / phoenix] <> [Restaurant yellow_17318: rainbow donuts / 8714 n 7th street / phoenix]
+[TRACE] 2020-12-03 20:59:58.295 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17318+yelp_5871: rainbow donuts / 8714 n 7th street / phoenix] <> [Restaurant yellow_17318: rainbow donuts / 8714 n 7th street / phoenix]
+[TRACE] 2020-12-03 20:59:58.295 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Cuisines': [Restaurant yellow_17305+yelp_5112: pizza metro / 2336 w thomas road / phoenix] <> [Restaurant yellow_17305: pizza metro / 2336 w thomas road / phoenix]
+[TRACE] 2020-12-03 20:59:58.296 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17305+yelp_5112: pizza metro / 2336 w thomas road / phoenix] <> [Restaurant yellow_17305: pizza metro / 2336 w thomas road / phoenix]
+[TRACE] 2020-12-03 20:59:58.296 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Rating': [Restaurant yellow_17305+yelp_5112: pizza metro / 2336 w thomas road / phoenix] <> [Restaurant yellow_17305: pizza metro / 2336 w thomas road / phoenix]
+[TRACE] 2020-12-03 20:59:58.297 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Neighborhoods': [Restaurant yellow_17243+yelp_5804: liyuen / 1602 7th avenue / phoenix] <> [Restaurant yellow_17243: liyuen / 1602 7th avenue / phoenix]
+[TRACE] 2020-12-03 20:59:58.297 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Error in 'Website': [Restaurant yellow_17243+yelp_5804: liyuen / 1602 7th avenue / phoenix] <> [Restaurant yellow_17243: liyuen / 1602 7th avenue / phoenix]
+[TRACE] 2020-12-03 20:59:58.298 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - Attribute-specific Accuracy:
+[TRACE] 2020-12-03 20:59:58.298 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Name: 1,00
+[TRACE] 2020-12-03 20:59:58.298 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Card: 0,93
+[TRACE] 2020-12-03 20:59:58.299 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	City: 1,00
+[TRACE] 2020-12-03 20:59:58.299 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Price: 0,80
+[TRACE] 2020-12-03 20:59:58.299 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	State: 1,00
+[TRACE] 2020-12-03 20:59:58.300 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Zip: 1,00
+[TRACE] 2020-12-03 20:59:58.300 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Neighborhoods: 0,53
+[TRACE] 2020-12-03 20:59:58.300 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Cuisines: 0,27
+[TRACE] 2020-12-03 20:59:58.301 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Website: 0,60
+[TRACE] 2020-12-03 20:59:58.301 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Rating: 0,87
+[TRACE] 2020-12-03 20:59:58.302 [de.uni_mannheim.informatik.dws.winter.datafusion.DataFusionEvaluator] - 	Address: 0,93
+[INFO ] 2020-12-03 20:59:58.303 [de.uni_mannheim.informatik.dw.wdi.Fusion.DataFusion_Main] - Accuracy: 0,81

@@ -16,21 +16,25 @@ public class NeighborhoodEvaluationRule extends EvaluationRule<Restaurant, Attri
 	@Override
 	public boolean isEqual(Restaurant record1, Restaurant record2, Attribute schemaElement) {
 		Set<String> neighborhoods1 = new HashSet<>();
-
-		for (Neighborhood a : record1.getNeighborhood()) {
-			// note: evaluating using the actor's name only suffices for simple
-			// lists
-			// in your project, you should have actor ids which you use here
-			// (and in the identity resolution)
-			neighborhoods1.add(a.getName().toLowerCase());
-		}
-
 		Set<String> neighborhoods2 = new HashSet<>();
-		for (Neighborhood a : record2.getNeighborhood()) {
-			neighborhoods2.add(a.getName().toLowerCase());
-		}
 
-		return neighborhoods1.containsAll(neighborhoods2) && neighborhoods2.containsAll(neighborhoods1);
+		try {
+			for (Neighborhood a : record1.getNeighborhood()) {
+				// note: evaluating using the actor's name only suffices for simple
+				// lists
+				// in your project, you should have actor ids which you use here
+				// (and in the identity resolution)
+				neighborhoods1.add(a.getName().toLowerCase());
+			}
+		} catch (Exception e ) {neighborhoods1 = null; return false;};
+		
+		try {
+			for (Neighborhood a : record2.getNeighborhood()) {
+				neighborhoods2.add(a.getName().toLowerCase());
+			}
+		} catch (Exception e ) {neighborhoods2 = null; return false;};
+
+		return (neighborhoods2.containsAll(neighborhoods1));
 	}
 
 	/* (non-Javadoc)

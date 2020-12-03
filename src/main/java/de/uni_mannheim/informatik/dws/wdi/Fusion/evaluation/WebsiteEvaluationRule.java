@@ -17,7 +17,16 @@ public class WebsiteEvaluationRule extends EvaluationRule<Restaurant, Attribute>
 	public boolean isEqual(Restaurant record1, Restaurant record2, Attribute schemaElement) {
 		// the title is correct if all tokens are there, but the order does not
 		// matter
-		return sim.calculate(record1.getWebsite(), record2.getWebsite()) == 1.0;
+		String s1 = record1.getWebsite();
+		s1 = s1.replace("https://", "");
+		s1 = s1.replace("http://", "");
+		s1 = s1.replace("www.", "");
+		String s2 = record2.getWebsite();
+		s2 = s2.replace("https://", "");
+		s2 = s2.replace("http://", "");
+		s2 = s2.replace("www.", "");
+		
+		return sim.calculate(s1, s2) == 1.0;
 	}
 
 	/* (non-Javadoc)

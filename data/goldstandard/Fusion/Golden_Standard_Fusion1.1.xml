@@ -1,6 +1,6 @@
 <restaurants xmlns:dt="urn:schemas-microsoft-com:datatypes">
 <restaurant>
-	<id>yellow_pages_17243</id>
+	<id>yellow_17243</id>
 	<name>liyuen</name>
 	<address>1602 7th avenue</address>
 	<city>phoenix</city>
@@ -18,13 +18,13 @@
 		</cuisine> 
 	</cuisines>
 	<price>$</price>
-	<website>http://www.liyuen-phoenix.com/</website>
+	<website>http://www.liyuen-phoenix.com</website>
 	<phone>(602) 238-9688</phone>
 	<card>no</card>	
 </restaurant>
 
 <restaurant>
-	<id>yellow_pages_17318</id>
+	<id>yellow_17318</id>
 	<name>rainbow donuts</name>
 	<address>8714 n 7th street</address>
 	<city>phoenix</city>
@@ -42,13 +42,13 @@
 		</cuisine> 
 	</cuisines>
 	<price>$</price>
-	<website>https://www.hihidonuts.com/</website>
+	<website>https://www.hihidonuts.com</website>
 	<phone>(602) 216-0766</phone>
 	<card>yes</card>	
 </restaurant>
 
 <restaurant>
-	<id>yellow_pages_17305</id>
+	<id>yellow_17305</id>
 	<name>pizza metro</name>
 	<address>2336 w thomas road</address>
 	<city>phoenix</city>
@@ -66,13 +66,13 @@
 		</cuisine> 
 	</cuisines>
 	<price>$$</price>
-	<website>https://pizzametroaz.com/</website>
+	<website>https://pizzametroaz.com</website>
 	<phone>(602) 262-9999</phone>
 	<card>yes</card>	
 </restaurant>
 
 <restaurant>
-	<id>yellow_pages_4014</id>
+	<id>yellow_4014</id>
 	<name>waba grill</name>
 	<address>1134 n vermont avenue</address>
 	<city>los angeles</city>
@@ -102,7 +102,7 @@
 </restaurant>
 
 <restaurant>
-	<id>yellow_pages_4067</id>
+	<id>yellow_4067</id>
 	<name>fundamental la</name>
 	<address>1303 westwood boulevard</address>
 	<city>los angeles</city>
@@ -126,7 +126,7 @@
 </restaurant>
 
 <restaurant>
-	<id>yellow_pages_17250</id>
+	<id>yellow_17250</id>
 	<name>jerry restaurant</name>
 	<address>2323 e thomas road</address>
 	<city>phoenix</city>
@@ -144,14 +144,14 @@
 		</cuisine>  
 	</cuisines>
 	<price>$</price>
-	<website>https://www.jerrysrestaurants.com/</website>
+	<website>https://www.jerrysrestaurants.com</website>
 	<phone>(602) 956-2870
 </phone>
 	<card>yes</card>	
 </restaurant>
 
 <restaurant>
-	<id>yellow_pages_4101</id>
+	<id>yellow_4101</id>
 	<name>empanada factory</name>
 	<address>2513 robertson boulevard</address>
 	<city>los angeles</city>
@@ -175,7 +175,7 @@
 </restaurant>
 
 <restaurant>
-	<id>yellow_pages_17240</id>
+	<id>yellow_17240</id>
 	<name>duck decanter</name>
 	<address>1651 e camelback road</address>
 	<city>phoenix</city>
