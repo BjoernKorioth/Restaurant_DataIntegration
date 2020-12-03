@@ -103,6 +103,8 @@ public class DataFusion_Main {
 			strategy.addAttributeFuser(Restaurant.PRICE,new PriceFuserFavourSource(),new PriceEvaluationRule());
 
 			strategy.addAttributeFuser(Restaurant.CUISINES,new CuisineFuserFavourSource(),new CuisineEvaluationRule());
+			
+			strategy.addAttributeFuser(Restaurant.RATING,new RatingFuserAverage(),new RatingEvaluation());
 
 //		strategy.addAttributeFuser(Restaurant.NEIGHBORHOODS,new NeighborhoodFuserFavourSource(),new NeighborhoodEvaluationRule());
 
