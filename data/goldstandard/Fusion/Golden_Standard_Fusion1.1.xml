@@ -1,0 +1,381 @@
+<restaurants xmlns:dt="urn:schemas-microsoft-com:datatypes">
+<restaurant>
+	<id>yellow_pages_17243</id>
+	<name>liyuen</name>
+	<address>1602 7th avenue</address>
+	<city>phoenix</city>
+	<zip>85007</zip>
+	<state>az</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>central city</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.6</rating>
+	<cuisines>
+		<cuisine>
+			<name>chinese</name>
+		</cuisine> 
+	</cuisines>
+	<price>$</price>
+	<website>http://www.liyuen-phoenix.com/</website>
+	<phone>(602) 238-9688</phone>
+	<card>no</card>	
+</restaurant>
+
+<restaurant>
+	<id>yellow_pages_17318</id>
+	<name>rainbow donuts</name>
+	<address>8714 n 7th street</address>
+	<city>phoenix</city>
+	<zip>85020</zip>
+	<state>az</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>north mountain</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.5</rating>
+	<cuisines>
+		<cuisine>
+			<name>bakery</name>
+		</cuisine> 
+	</cuisines>
+	<price>$</price>
+	<website>https://www.hihidonuts.com/</website>
+	<phone>(602) 216-0766</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yellow_pages_17305</id>
+	<name>pizza metro</name>
+	<address>2336 w thomas road</address>
+	<city>phoenix</city>
+	<zip>85015</zip>
+	<state>az</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>encanto</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.7</rating>
+	<cuisines>
+		<cuisine>
+			<name>italian</name>
+		</cuisine> 
+	</cuisines>
+	<price>$$</price>
+	<website>https://pizzametroaz.com/</website>
+	<phone>(602) 262-9999</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yellow_pages_4014</id>
+	<name>waba grill</name>
+	<address>1134 n vermont avenue</address>
+	<city>los angeles</city>
+	<zip>90029</zip>
+	<state>ca</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>east hollywood</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.0</rating>
+	<cuisines>
+		<cuisine>
+			<name>asian</name>
+		</cuisine> 
+		<cuisine>
+			<name>japanese</name>
+		</cuisine> 
+		<cuisine>
+			<name>fast food</name>
+		</cuisine> 
+	</cuisines>
+	<price>$</price>
+	<website>http://www.wabagrill.com</website>
+	<phone>(323) 660-9222</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yellow_pages_4067</id>
+	<name>fundamental la</name>
+	<address>1303 westwood boulevard</address>
+	<city>los angeles</city>
+	<zip>90024</zip>
+	<state>ca</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>the getty center</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.4</rating>
+	<cuisines>
+		<cuisine>
+			<name>american</name>
+		</cuisine>  
+	</cuisines>
+	<price>$$</price>
+	<website>www.fundamental-la.com</website>
+	<phone>(310) 444-7581</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yellow_pages_17250</id>
+	<name>jerry restaurant</name>
+	<address>2323 e thomas road</address>
+	<city>phoenix</city>
+	<zip>85016</zip>
+	<state>az</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>camelback east</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.0</rating>
+	<cuisines>
+		<cuisine>
+			<name>american</name>
+		</cuisine>  
+	</cuisines>
+	<price>$</price>
+	<website>https://www.jerrysrestaurants.com/</website>
+	<phone>(602) 956-2870
+</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yellow_pages_4101</id>
+	<name>empanada factory</name>
+	<address>2513 robertson boulevard</address>
+	<city>los angeles</city>
+	<zip>90034</zip>
+	<state>ca</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>west los angeles</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.3</rating>
+	<cuisines>
+		<cuisine>
+			<name>Latin American</name>
+		</cuisine>  
+	</cuisines>
+	<price>$$</price>
+	<website>www.empanadafactory.com</website>
+	<phone>(310) 836-5944</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yellow_pages_17240</id>
+	<name>duck decanter</name>
+	<address>1651 e camelback road</address>
+	<city>phoenix</city>
+	<zip>85016</zip>
+	<state>az</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>camelback east</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.6</rating>
+	<cuisines>
+		<cuisine>
+			<name>american</name>
+		</cuisine>  
+		<cuisine>
+			<name>deli</name>
+		</cuisine>
+	</cuisines>
+	<price>$$</price>
+	<website>www.duckanddecanter.com</website>
+	<phone>(602) 274-5429</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yelp_8484</id>
+	<name>big mama chicken waffles</name>
+	<address> 9810 forest lane</address>
+	<city>dallas</city>
+	<zip>75243</zip>
+	<state>tx</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>woodbridge</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>3,7</rating>
+	<cuisines>
+		<cuisine>
+			<name>american</name>
+		</cuisine>  
+	</cuisines>
+	<price>$</price>
+	<website>bigmamaschickenandwaffles.com</website>
+	<phone>(214) 340-3035</phone>
+	<card>no</card>	
+</restaurant>
+
+<restaurant>
+	<id>yelp_8577</id>
+	<name>city cafe</name>
+	<address>5757 w lovers lane</address>
+	<city>dallas</city>
+	<zip>75209</zip>
+	<state>tx</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>university park</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.5</rating>
+	<cuisines>
+		<cuisine>
+			<name>american</name>
+		</cuisine>  
+	</cuisines>
+	<price>$</price>
+	<website>www.thecitycafedallas.com</website>
+	<phone>(214) 351-2233</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yelp_421</id>
+	<name>upland</name>
+	<address>345 park avenue</address>
+	<city>new york</city>
+	<zip>10010</zip>
+	<state>ny</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>gramercy flatiron</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.0</rating>
+	<cuisines>
+		<cuisine>
+			<name>american</name>
+		</cuisine>  
+	</cuisines>
+	<price>$$$</price>
+	<website>uplandnyc.com</website>
+	<phone>(212) 686-1006</phone>
+	<card>no</card>	
+</restaurant>
+
+<restaurant>
+	<id>yelp_8340</id>
+	<name>ming place china bistro</name>
+	<address>5715 lemmon avenue 3</address>
+	<city>dallas</city>
+	<zip>75209</zip>
+	<state>tx</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>sixth floor museum</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.3</rating>
+	<cuisines>
+		<cuisine>
+			<name>chinese</name>
+		</cuisine>  
+	</cuisines>
+	<price>$$</price>
+	<website>www.mingplacechinabistro.com</website>
+	<phone>(214) 350-8188</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yelp_8333</id>
+	<name>fireside pies</name>
+	<address>7709 inwood road</address>
+	<city>dallas</city>
+	<zip>75209</zip>
+	<state>tx</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>university park</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.3</rating>
+	<cuisines>
+		<cuisine>
+			<name>pizza</name>
+		</cuisine> 
+		<cuisine>
+			<name>italian</name>
+		</cuisine>		
+	</cuisines>
+	<price>$$</price>
+	<website>firesidepies.com</website>
+	<phone>(214) 357-3800</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yelp_8223</id>
+	<name>serious pizza</name>
+	<address>2807 elm street</address>
+	<city>dallas</city>
+	<zip>75226</zip>
+	<state>tx</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>deep ellum</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.1</rating>
+	<cuisines>
+		<cuisine>
+			<name>pizza</name>
+		</cuisine>  
+	</cuisines>
+	<price>$</price>
+	<website>seriouspizza.com</website>
+	<phone>(214) 761-9999</phone>
+	<card>yes</card>	
+</restaurant>
+
+<restaurant>
+	<id>yelp_8612</id>
+	<name>smashburger</name>
+	<address>2222 mckinney avenue</address>
+	<city>dallas</city>
+	<zip>75201</zip>
+	<state>tx</state>
+	<neighborhoods>
+		<neighborhood>
+			<name>oak lawn</name>
+		</neighborhood>
+	</neighborhoods>
+	<rating>4.1</rating>
+	<cuisines>
+		<cuisine>
+			<name>hamburger</name>
+		</cuisine> 
+		<cuisine>
+			<name>fast food</name>
+		</cuisine>
+		<cuisine>
+			<name>american</name>
+		</cuisine>		
+	</cuisines>
+	<price>$$</price>
+	<website>smashburger.com</website>
+	<phone>(469) 341-3394</phone>
+	<card>yes</card>	
+</restaurant>
+
+</restaurants>

@@ -78,7 +78,7 @@ public class DataFusion_Main {
 
 			// load the gold standard
 			DataSet<Restaurant, Attribute> gs = new FusibleHashedDataSet<>();
-			new RestaurantXMLReader().loadFromXML(new File("data/goldstandard/Fusion/Golden_Standard_Fusion.xml"), "/restaurants/restaurant", gs);
+			new RestaurantXMLReader().loadFromXML(new File("data/goldstandard/Fusion/Golden_Standard_Fusion1.1.xml"), "/restaurants/restaurant", gs);
 
 
 			// define the fusion strategy
@@ -90,21 +90,21 @@ public class DataFusion_Main {
 			// add attribute fusers
 			strategy.addAttributeFuser(Restaurant.ADDRESS, new AddressFuserShortest(),new AddressEvaluationRule());
 
-			strategy.addAttributeFuser(Restaurant.CARD, new CardFuserVoting(), new CardEvaluationRule());
-
-			strategy.addAttributeFuser(Restaurant.CITY,new CityFuserVoting(),new CityEvaluationRule());
-
-			strategy.addAttributeFuser(Restaurant.ZIP,new ZIPFuserVoting(),new ZIPEvaluationRule());
-			strategy.addAttributeFuser(Restaurant.STATE,new StateFuserVoting(),new StateEvaluationRule());
-
+//			strategy.addAttributeFuser(Restaurant.CARD, new CardFuserVoting(), new CardEvaluationRule());
+//
+//			strategy.addAttributeFuser(Restaurant.CITY,new CityFuserVoting(),new CityEvaluationRule());
+//
+//			strategy.addAttributeFuser(Restaurant.ZIP,new ZIPFuserVoting(),new ZIPEvaluationRule());
+//			strategy.addAttributeFuser(Restaurant.STATE,new StateFuserVoting(),new StateEvaluationRule());
+//
 			strategy.addAttributeFuser(Restaurant.NAME,new NameFuserFavourSource(),new NameEvaluationRule());
-
-			strategy.addAttributeFuser(Restaurant.WEBSITE,new WebsiteFuserShortest(),new WebsiteEvaluationRule());
-			strategy.addAttributeFuser(Restaurant.PRICE,new PriceFuserFavourSource(),new PriceEvaluationRule());
-
-			strategy.addAttributeFuser(Restaurant.CUISINES,new CuisineFuserFavourSource(),new CuisineEvaluationRule());
-			
-			strategy.addAttributeFuser(Restaurant.RATING,new RatingFuserAverage(),new RatingEvaluation());
+//
+//			strategy.addAttributeFuser(Restaurant.WEBSITE,new WebsiteFuserShortest(),new WebsiteEvaluationRule());
+//			strategy.addAttributeFuser(Restaurant.PRICE,new PriceFuserFavourSource(),new PriceEvaluationRule());
+//
+//			strategy.addAttributeFuser(Restaurant.CUISINES,new CuisineFuserFavourSource(),new CuisineEvaluationRule());
+//			
+//			strategy.addAttributeFuser(Restaurant.RATING,new RatingFuserAverage(),new RatingEvaluation());
 
 //		strategy.addAttributeFuser(Restaurant.NEIGHBORHOODS,new NeighborhoodFuserFavourSource(),new NeighborhoodEvaluationRule());
 
